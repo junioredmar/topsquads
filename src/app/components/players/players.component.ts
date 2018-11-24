@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Player } from '../player';
+import { Player } from '../../models/player';
+import { PLAYERS } from '../../mocks/mock-players'
 
 @Component({
   selector: 'app-players',
@@ -8,10 +9,8 @@ import { Player } from '../player';
 })
 export class PlayersComponent implements OnInit {
 
-  player: Player = {
-    id: 1,
-    name: 'Messi'
-  }
+  players = PLAYERS;
+  selectedPlayer: Player;
 
   constructor() { 
     //Constructors should do no more than set the initial local variables to simple values.
@@ -21,4 +20,7 @@ export class PlayersComponent implements OnInit {
     //Here is a good place for a component to fetch its initial data. 
   }
 
+  onSelect(player: Player): void {
+    this.selectedPlayer = player;
+  }
 }
