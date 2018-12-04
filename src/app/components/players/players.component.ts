@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Player } from '../../models/player';
-import { PLAYERS } from '../../mocks/mock-players'
+import { PlayerService } from '../../services/player.service';
 
 @Component({
   selector: 'app-players',
@@ -9,18 +9,24 @@ import { PLAYERS } from '../../mocks/mock-players'
 })
 export class PlayersComponent implements OnInit {
 
-  players = PLAYERS;
+  players: Player[];
   selectedPlayer: Player;
 
-  constructor() { 
+  constructor(private playerService: PlayerService) {
     //Constructors should do no more than set the initial local variables to simple values.
   }
 
   ngOnInit() {
-    //Here is a good place for a component to fetch its initial data. 
+    //Here is a good place for a component to fetch its initial data.
+    this.getPlayers();
   }
 
   onSelect(player: Player): void {
     this.selectedPlayer = player;
+  }
+
+  getPlayers(): void {
+    this.playerService.getPlayers()
+      .subscribe(players => this.players = players);
   }
 }
