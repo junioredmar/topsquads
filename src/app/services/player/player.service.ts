@@ -16,4 +16,9 @@ export class PlayerService {
     // of = emits an Observable return (ASYNCHRONOUSLY)
     return of(PLAYERS)
   }
+
+  getPlayer(id: number): Observable<Player> {
+    this.messageService.add(`PlayerService: fetched player id=${id}`);
+    return of(PLAYERS.find(hero => hero.id === id));
+  }
 }

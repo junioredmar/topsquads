@@ -10,7 +10,6 @@ import { PlayerService } from '../../services/player/player.service';
 export class PlayersComponent implements OnInit {
 
   players: Player[];
-  selectedPlayer: Player;
 
   constructor(private playerService: PlayerService) {
     //Constructors should do no more than set the initial local variables to simple values.
@@ -19,10 +18,6 @@ export class PlayersComponent implements OnInit {
   ngOnInit() {
     //Here is a good place for a component to fetch its initial data.
     this.getPlayers();
-  }
-
-  onSelect(player: Player): void {
-    this.selectedPlayer = player;
   }
 
   getPlayers(): void {
