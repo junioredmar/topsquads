@@ -10,6 +10,7 @@ import { PlayersComponent } from './components/players/players.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { PlayerDetailComponent } from './components/player-detail/player-detail.component';
+import { PlayerSearchComponent } from './components/player-search/player-search.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PlayerDetailComponent } from './components/player-detail/player-detail.
     PlayersComponent,
     MessagesComponent,
     DashboardComponent,
-    PlayerDetailComponent
+    PlayerDetailComponent,
+    PlayerSearchComponent
   ],
   imports: [
     BrowserModule,
