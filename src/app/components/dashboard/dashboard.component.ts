@@ -9,18 +9,18 @@ import { PlayerService } from 'src/app/services/player/player.service';
 })
 export class DashboardComponent implements OnInit {
 
-  players: Player[] = [];
+  topPlayers: Player[] = [];
 
   constructor(private playerService: PlayerService) { }
 
   ngOnInit() {
-    this.getPlayers();
+    this.getTopPlayers();
   }
 
-  getPlayers(): void {
+  getTopPlayers(): void {
     this.playerService.getPlayers()
       .subscribe(
-        players => this.players = players.slice(1, 5)
+        players => this.topPlayers = players.slice(0, 4)
       );
   }
 
