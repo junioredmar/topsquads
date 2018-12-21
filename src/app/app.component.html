@@ -1,8 +1,18 @@
-<h1>{{title}}</h1>
-<h2>{{subtitle}}</h2>
-<nav>
-    <a routerLink="/dashboard">Dashboard</a>
-    <a routerLink="/players">Players</a>
-</nav>
-<router-outlet></router-outlet>
-<app-messages></app-messages>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-button routerLink="/dashboard">
+            <mat-icon class="toolbar-first-icon">verified_user</mat-icon>
+            TopSquads
+        </button>
+        <span class="toolbar-spacer"></span>
+        <button mat-button routerLink="/players">
+            <mat-icon class="toolbar-icon">supervised_user_circle</mat-icon>
+            All Players
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="main">
+    <router-outlet></router-outlet>
+    <app-messages></app-messages>
+</div>
