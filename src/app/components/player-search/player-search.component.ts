@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { Subject } from 'rxjs';
 import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
 import { Player } from '../../models/player';
 import { PlayerService } from 'src/app/services/player/player.service';
@@ -9,17 +11,17 @@ import { PlayerService } from 'src/app/services/player/player.service';
   templateUrl: './player-search.component.html',
   styleUrls: ['./player-search.component.scss']
 })
-export class PlayerSearchComponent implements OnInit {
+export class PlayerSearchComponent {
 
-  players$: Observable<Player[]>;
+  playerCtrl = new FormControl();
+  filteredPlayers$: Observable<Player[]>;
   private searchTerms = new Subject<string>();
 
-  constructor(
-    private playerService: PlayerService
-  ) { }
+  constructor(private playerService: PlayerService) { }
 
   ngOnInit() {
-    this.players$ = this.searchTerms.pipe(
+
+    this.filteredPlayers$ = this.searchTerms.pipe(
       // wait 300ms after each keystroke before considering the term
       debounceTime(300),
 
@@ -32,7 +34,9 @@ export class PlayerSearchComponent implements OnInit {
     );
   }
 
-  search(term: string): void {
+  searchPlayer(term: string): void {
     this.searchTerms.next(term);
   }
+
+
 }

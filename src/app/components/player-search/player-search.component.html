@@ -1,18 +1,19 @@
-<mat-grid-list cols="1" rowHeight="100px">
 
+
+<mat-grid-list cols="1" rowHeight="180px">
   <mat-grid-tile [colspan]="1" [rowspan]="1">
-    <div id="search-component">
-      <h4>Player Search</h4>
-
-      <input #searchBox id="search-box" (input)="search(searchBox.value)" />
-
-      <ul class="search-result">
-        <li *ngFor="let player of players$ | async">
-          <a routerLink="/players/{{player.id}}">
-            {{player.name}}
-          </a>
-        </li>
-      </ul>
-    </div>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Player" aria-label="Player" [matAutocomplete]="auto" [formControl]="playerCtrl"
+          #searchBox id="search-box" (input)="searchPlayer(searchBox.value)" autofocus>
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let player of filteredPlayers$ | async" [value]="player.name" routerLink="/players/{{player.id}}">
+            <img class="example-option-img" aria-hidden [src]="player.imageUrl" height="25">
+            <span>{{player.name}}</span> |
+            <small>Rating: {{player.rating}}</small>
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
   </mat-grid-tile>
 </mat-grid-list>

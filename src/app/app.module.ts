@@ -1,7 +1,7 @@
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
@@ -11,6 +11,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 import { InMemoryDataService } from './mocks/in-memory-data.service';
 import { AppRoutingModule } from './app-routing.module';
@@ -41,7 +44,11 @@ import { PlayerSearchComponent } from './components/player-search/player-search.
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
-    MatGridListModule
+    MatGridListModule,
+    ReactiveFormsModule,
+    MatAutocompleteModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
