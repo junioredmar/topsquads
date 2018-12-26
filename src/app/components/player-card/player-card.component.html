@@ -1,7 +1,7 @@
 <div class="center-block pcdisplay ut19 card-regular" [ngClass]="player.color">
   <div class="top-overlay"></div>
   <div class="pcdisplay-rat">{{player.rating}}</div>
-  <div class="pcdisplay-name">{{(player.name.length>14)? (player.name | slice:0:14)+'..':(player.name)}}</div>
+  <div class="pcdisplay-name">{{player.name | truncate}}</div>
   <div class="pcdisplay-pos">{{player.position}}</div>
   <div class="pcdisplay-country">
     <img id="player_nation" src="{{player.nationImg}}">
