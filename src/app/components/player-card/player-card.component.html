@@ -1,16 +1,17 @@
-<div class="pcdisplay card-regular center-block" [ngClass]="player.color">
+<div class="pcdisplay card-regular center-block" [ngClass]="player?.color">
   <div class="top-overlay"></div>
-  <div class="pcdisplay-rat">{{player.rating}}</div>
-  <div class="pcdisplay-name">{{player.name | truncate}}</div>
-  <div class="pcdisplay-pos">{{player.position}}</div>
+  <div class="pcdisplay-rat">{{player?.rating}}</div>
+  <div class="pcdisplay-name">{{player?.name | truncate}}</div>
+  <!-- <div class="pcdisplay-name">{{ (player?.name.length>14)? (player?.name | slice:0:14)+'..':(player?.name) }}</div> -->
+  <div class="pcdisplay-pos">{{player?.position}}</div>
   <div class="pcdisplay-country">
-    <img id="player_nation" src="{{player.nationImg}}">
+    <img id="player_nation" src="{{player?.nationImg}}">
   </div>
   <div class="pcdisplay-club">
-    <img id="player_club" src="{{player.clubImg}}">
+    <img id="player_club" src="{{player?.clubImg}}">
   </div>
   <div class="pcdisplay-picture ">
-    <img class="pcdisplay-picture-width" id="player_pic" src="{{player.imageUrl}}">
+    <img class="pcdisplay-picture-width" id="player_pic" src="{{player?.imageUrl}}">
   </div>
   <div class="horz-line top-one-horz-line"></div>
   <div class="horz-line top-two-horz-line"></div>
@@ -18,22 +19,22 @@
   <div class="horz-line"></div>
   <div class="horz-line horz-line-bottom"></div>
   <div class="ovrhover">
-    <div class="pcdisplay-ovr1 stat-val">{{player.pace}}</div>
+    <div class="pcdisplay-ovr1 stat-val">{{player?.pace}}</div>
     <div class="pcdisplay-card-pace">PAC</div>
 
-    <div class="pcdisplay-ovr2 stat-val">{{player.shooting}}</div>
+    <div class="pcdisplay-ovr2 stat-val">{{player?.shooting}}</div>
     <div class="pcdisplay-card-shoo">SHO</div>
 
-    <div class="pcdisplay-ovr3 stat-val">{{player.passing}}</div>
+    <div class="pcdisplay-ovr3 stat-val">{{player?.passing}}</div>
     <div class="pcdisplay-card-pas"> PAS</div>
 
-    <div class="pcdisplay-ovr4 stat-val">{{player.dribbling}}</div>
+    <div class="pcdisplay-ovr4 stat-val">{{player?.dribbling}}</div>
     <div class="pcdisplay-card-dri"> DRI</div>
 
-    <div class="pcdisplay-ovr5 stat-val">{{player.defending}}</div>
+    <div class="pcdisplay-ovr5 stat-val">{{player?.defending}}</div>
     <div class="pcdisplay-card-def"> DEF</div>
 
-    <div class="pcdisplay-ovr6 stat-val">{{player.physicality}}</div>
+    <div class="pcdisplay-ovr6 stat-val">{{player?.physicality}}</div>
     <div class="pcdisplay-card-phy"> PHY</div>
   </div>
 </div>
