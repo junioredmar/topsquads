@@ -1,0 +1,4550 @@
+.pcdisplay{
+    color:#fff;
+    font-family:"Open Sans",Arial,sans-serif;
+    position:relative
+  }
+  .pcdisplay-name{
+    overflow:hidden
+  }
+  .pcdisplay div{
+    line-height:18px;
+    position:absolute
+  }
+  @font-face{
+    font-family:'DINPro-Cond';
+    src:url("../../../assets/fonts/DINPro-Cond.woff") format("truetype")
+  }
+  @font-face{
+    font-family:'DINPro-Cond-Bold';
+    src:url("../../../assets/fonts/DINPro-CondBold.woff") format("truetype")
+  }
+  @font-face{
+    font-family:'DINPro-Cond-Med';
+    src:url("../../../assets/fonts/DINPro-CondMedium.woff") format("truetype")
+  }
+  .ut19.card-hd.pcdisplay .top-overlay{
+    webkit-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box;
+    width:60px;
+    height:80%;
+    position:absolute;
+    top:28px;
+    left:38px;
+    z-index:1;
+    display:none
+  }
+  .ut19.card-regular.pcdisplay .top-overlay{
+    webkit-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box;
+    width:41px;
+    height:180px;
+    position:absolute;
+    top:20px;
+    left:23px;
+    z-index:1;
+    display:none
+  }
+  .ut19.card-med.pcdisplay .top-overlay{
+    webkit-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box;
+    width:30px;
+    height:126px;
+    position:absolute;
+    top:20px;
+    left:16px;
+    z-index:1;
+    display:none
+  }
+  .ut19.card-tiny.pcdisplay .top-overlay{
+    webkit-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box;
+    width:20px;
+    height:66px;
+    position:absolute;
+    top:20px;
+    left:10px;
+    z-index:2;
+    display:none
+  }
+  .ut19.card-tiny.pcdisplay.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/goldrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.tiny.big.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/goldrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.card-med.pcdisplay.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/goldrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.card-regular.pcdisplay.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/goldrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.card-hd.pcdisplay.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/goldrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.gold .vert-line,.ut19.gold .horz-line{
+    background:#645215
+  }
+  .ut19.card-tiny.pcdisplay.gold.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/goldnrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.tiny.big.gold.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/goldnrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.card-med.pcdisplay.gold.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/goldnrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.card-regular.pcdisplay.gold.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/goldnrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.card-hd.pcdisplay.gold.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/goldnrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.gold.non-rare .vert-line,.ut19.gold.non-rare .horz-line{
+    background:#574A2B
+  }
+  .ut19.card-tiny.pcdisplay.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/silverrnif.png?v=15");
+    border:none;
+    color:#3b3d41
+  }
+  .ut19.tiny.big.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/silverrnif.png?v=15");
+    border:none;
+    color:#3b3d41
+  }
+  .ut19.card-med.pcdisplay.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/silverrnif.png?v=15");
+    border:none;
+    color:#3b3d41
+  }
+  .ut19.card-regular.pcdisplay.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/silverrnif.png?v=15");
+    border:none;
+    color:#3b3d41
+  }
+  .ut19.card-hd.pcdisplay.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/silverrnif.png?v=15");
+    border:none;
+    color:#3b3d41
+  }
+  .ut19.silver .vert-line,.ut19.silver .horz-line{
+    background:#393E3F
+  }
+  .ut19.card-tiny.pcdisplay.silver.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/silvernrnif.png?v=15");
+    border:none;
+    color:#3b3d41
+  }
+  .ut19.tiny.big.silver.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/silvernrnif.png?v=15");
+    border:none;
+    color:#3b3d41
+  }
+  .ut19.card-med.pcdisplay.silver.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/silvernrnif.png?v=15");
+    border:none;
+    color:#3b3d41
+  }
+  .ut19.card-regular.pcdisplay.silver.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/silvernrnif.png?v=15");
+    border:none;
+    color:#3b3d41
+  }
+  .ut19.card-hd.pcdisplay.silver.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/silvernrnif.png?v=15");
+    border:none;
+    color:#3b3d41
+  }
+  .ut19.silver.non-rare .vert-line,.ut19.silver.non-rare .horz-line{
+    background:#343839
+  }
+  .ut19.card-tiny.pcdisplay.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/bronzernif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.tiny.big.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/bronzernif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.card-med.pcdisplay.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/bronzernif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.card-regular.pcdisplay.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/bronzernif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.card-hd.pcdisplay.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/bronzernif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.bronze .vert-line,.ut19.bronze .horz-line{
+    background:#4E331C
+  }
+  .ut19.card-tiny.pcdisplay.bronze.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/bronzenrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.tiny.big.bronze.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/bronzenrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.card-med.pcdisplay.bronze.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/bronzenrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.card-regular.pcdisplay.bronze.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/bronzenrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.card-hd.pcdisplay.bronze.non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/bronzenrnif.png?v=15");
+    border:none;
+    color:#4d331f
+  }
+  .ut19.bronze.non-rare .vert-line,.ut19.bronze.non-rare .horz-line{
+    background:#403322
+  }
+  .ut19.card-tiny.pcdisplay.if.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/goldinform.png?v=15");
+    border:none;
+    color:#e1c775
+  }
+  .ut19.tiny.big.if.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/goldinform.png?v=15");
+    border:none;
+    color:#e1c775
+  }
+  .ut19.card-med.pcdisplay.if.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/goldinform.png?v=15");
+    border:none;
+    color:#e1c775
+  }
+  .ut19.card-regular.pcdisplay.if.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/goldinform.png?v=15");
+    border:none;
+    color:#e1c775
+  }
+  .ut19.card-hd.pcdisplay.if.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/goldinform.png?v=15");
+    border:none;
+    color:#e1c775
+  }
+  .ut19.if.gold .vert-line,.ut19.if.gold .horz-line{
+    background:#B19B58
+  }
+  .ut19.pcdisplay.if.gold .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.if.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/silverinform.png?v=15");
+    border:none;
+    color:#cdd9e1
+  }
+  .ut19.tiny.big.if.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/silverinform.png?v=15");
+    border:none;
+    color:#cdd9e1
+  }
+  .ut19.card-med.pcdisplay.if.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/silverinform.png?v=15");
+    border:none;
+    color:#cdd9e1
+  }
+  .ut19.card-regular.pcdisplay.if.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/silverinform.png?v=15");
+    border:none;
+    color:#cdd9e1
+  }
+  .ut19.card-hd.pcdisplay.if.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/silverinform.png?v=15");
+    border:none;
+    color:#cdd9e1
+  }
+  .ut19.if.silver .vert-line,.ut19.if.silver .horz-line{
+    background:#8D96A0
+  }
+  .ut19.pcdisplay.if.silver .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.if.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/bronzeinform.png?v=15");
+    border:none;
+    color:#ca945f
+  }
+  .ut19.tiny.big.if.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/bronzeinform.png?v=15");
+    border:none;
+    color:#ca945f
+  }
+  .ut19.card-med.pcdisplay.if.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/bronzeinform.png?v=15");
+    border:none;
+    color:#ca945f
+  }
+  .ut19.card-regular.pcdisplay.if.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/bronzeinform.png?v=15");
+    border:none;
+    color:#ca945f
+  }
+  .ut19.card-hd.pcdisplay.if.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/bronzeinform.png?v=15");
+    border:none;
+    color:#ca945f
+  }
+  .ut19.if.bronze .vert-line,.ut19.if.bronze .horz-line{
+    background:#967552
+  }
+  .ut19.pcdisplay.if.bronze .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.purple{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/purplec.png?v=15");
+    border:none;
+    color:#CBB8F9
+  }
+  .ut19.tiny.big.purple{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/purplec.png?v=15");
+    border:none;
+    color:#CBB8F9
+  }
+  .ut19.card-med.pcdisplay.purple{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/purplec.png?v=15");
+    border:none;
+    color:#CBB8F9
+  }
+  .ut19.card-regular.pcdisplay.purple{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/purplec.png?v=15");
+    border:none;
+    color:#CBB8F9
+  }
+  .ut19.card-hd.pcdisplay.purple{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/purplec.png?v=15");
+    border:none;
+    color:#CBB8F9
+  }
+  .ut19.purple .vert-line,.ut19.purple .horz-line{
+    background:#21174B
+  }
+  .ut19.pcdisplay.purple .top-overlay{
+    background:#241845;
+    background:linear-gradient(180deg, rgba(36,24,69,0) 10%, rgba(36,24,69,0.65) 64%, rgba(36,24,69,0.55) 89%, rgba(36,24,69,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.toty{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/bluec.png?v=15");
+    border:none;
+    color:#e1c775
+  }
+  .ut19.tiny.big.toty{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/bluec.png?v=15");
+    border:none;
+    color:#e1c775
+  }
+  .ut19.card-med.pcdisplay.toty{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/bluec.png?v=15");
+    border:none;
+    color:#e1c775
+  }
+  .ut19.card-regular.pcdisplay.toty{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/bluec.png?v=15");
+    border:none;
+    color:#e1c775
+  }
+  .ut19.card-hd.pcdisplay.toty{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/bluec.png?v=15");
+    border:none;
+    color:#e1c775
+  }
+  .ut19.toty .vert-line,.ut19.toty .horz-line{
+    background:#e1c775
+  }
+  .ut19.pcdisplay.toty .top-overlay{
+    background:#000c20;
+    background:linear-gradient(180deg, rgba(0,12,32,0) 10%, rgba(0,12,32,0.65) 64%, rgba(0,12,32,0.55) 89%, rgba(0,12,32,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.bluered{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/blueredc.png?v=15");
+    border:none;
+    color:#B5FA10
+  }
+  .ut19.tiny.big.bluered{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/blueredc.png?v=15");
+    border:none;
+    color:#B5FA10
+  }
+  .ut19.card-med.pcdisplay.bluered{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/blueredc.png?v=15");
+    border:none;
+    color:#B5FA10
+  }
+  .ut19.card-regular.pcdisplay.bluered{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/blueredc.png?v=15");
+    border:none;
+    color:#B5FA10
+  }
+  .ut19.card-hd.pcdisplay.bluered{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/blueredc.png?v=15");
+    border:none;
+    color:#B5FA10
+  }
+  .ut19.bluered .vert-line,.ut19.bluered .horz-line{
+    background:#9CD70D
+  }
+  .ut19.pcdisplay.bluered .top-overlay{
+    background:#f10000;
+    background:linear-gradient(180deg, rgba(241,0,0,0) 10%, rgba(241,0,0,0.65) 64%, rgba(241,0,0,0.55) 89%, rgba(241,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.stpatrick{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/greenc.png?v=15");
+    border:none;
+    color:#1d855c
+  }
+  .ut19.tiny.big.stpatrick{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/greenc.png?v=15");
+    border:none;
+    color:#1d855c
+  }
+  .ut19.card-med.pcdisplay.stpatrick{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/greenc.png?v=15");
+    border:none;
+    color:#1d855c
+  }
+  .ut19.card-regular.pcdisplay.stpatrick{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/greenc.png?v=15");
+    border:none;
+    color:#1d855c
+  }
+  .ut19.card-hd.pcdisplay.stpatrick{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/greenc.png?v=15");
+    border:none;
+    color:#1d855c
+  }
+  .ut19.stpatrick .vert-line,.ut19.stpatrick .horz-line{
+    background:#197450
+  }
+  .ut19.card-tiny.pcdisplay.motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/orangec.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.tiny.big.motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/orangec.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.card-med.pcdisplay.motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/orangec.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.card-regular.pcdisplay.motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/orangec.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.card-hd.pcdisplay.motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/orangec.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.motm .vert-line,.ut19.motm .horz-line{
+    background:#D96920
+  }
+  .ut19.pcdisplay.motm .top-overlay{
+    background:#e6781d;
+    background:linear-gradient(180deg, rgba(230,120,29,0) 10%, rgba(230,120,29,0.65) 64%, rgba(230,120,29,0.55) 89%, rgba(230,120,29,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.pink{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/pinkc.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.tiny.big.pink{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/pinkc.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.card-med.pcdisplay.pink{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/pinkc.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.card-regular.pcdisplay.pink{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/pinkc.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.card-hd.pcdisplay.pink{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/pinkc.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.pink .vert-line,.ut19.pink .horz-line{
+    background:#CF3E8C
+  }
+  .ut19.pcdisplay.pink .top-overlay{
+    background:#e155a8;
+    background:linear-gradient(180deg, rgba(225,85,168,0) 10%, rgba(225,85,168,0.65) 64%, rgba(225,85,168,0.55) 89%, rgba(225,85,168,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.pro{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/pro.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.tiny.big.pro{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/pro.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.card-med.pcdisplay.pro{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/pro.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.card-regular.pcdisplay.pro{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/pro.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.card-hd.pcdisplay.pro{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/pro.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.pro .vert-line,.ut19.pro .horz-line{
+    background:#2CA496
+  }
+  .ut19.pcdisplay.pro .top-overlay{
+    background:#18a99b;
+    background:linear-gradient(180deg, rgba(24,169,155,0) 10%, rgba(24,169,155,0.65) 64%, rgba(24,169,155,0.55) 89%, rgba(24,169,155,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.tots.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/totsg.png?v=15");
+    border:none;
+    color:#e8dc9b
+  }
+  .ut19.tiny.big.tots.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/totsg.png?v=15");
+    border:none;
+    color:#e8dc9b
+  }
+  .ut19.card-med.pcdisplay.tots.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/totsg.png?v=15");
+    border:none;
+    color:#e8dc9b
+  }
+  .ut19.card-regular.pcdisplay.tots.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/totsg.png?v=15");
+    border:none;
+    color:#e8dc9b
+  }
+  .ut19.card-hd.pcdisplay.tots.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/totsg.png?v=15");
+    border:none;
+    color:#e8dc9b
+  }
+  .ut19.tots.gold .vert-line,.ut19.tots.gold .horz-line{
+    background:#e8dc9b
+  }
+  .ut19.card-tiny.pcdisplay.tots.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/totss.png?v=15");
+    border:none;
+    color:#dee6ec
+  }
+  .ut19.tiny.big.tots.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/totss.png?v=15");
+    border:none;
+    color:#dee6ec
+  }
+  .ut19.card-med.pcdisplay.tots.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/totss.png?v=15");
+    border:none;
+    color:#dee6ec
+  }
+  .ut19.card-regular.pcdisplay.tots.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/totss.png?v=15");
+    border:none;
+    color:#dee6ec
+  }
+  .ut19.card-hd.pcdisplay.tots.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/totss.png?v=15");
+    border:none;
+    color:#dee6ec
+  }
+  .ut19.tots.silver .vert-line,.ut19.tots.silver .horz-line{
+    background:#dee6ec
+  }
+  .ut19.card-tiny.pcdisplay.tots.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/totsb.png?v=15");
+    border:none;
+    color:#d1a77e
+  }
+  .ut19.tiny.big.tots.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/totsb.png?v=15");
+    border:none;
+    color:#d1a77e
+  }
+  .ut19.card-med.pcdisplay.tots.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/totsb.png?v=15");
+    border:none;
+    color:#d1a77e
+  }
+  .ut19.card-regular.pcdisplay.tots.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/totsb.png?v=15");
+    border:none;
+    color:#d1a77e
+  }
+  .ut19.card-hd.pcdisplay.tots.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/totsb.png?v=15");
+    border:none;
+    color:#d1a77e
+  }
+  .ut19.tots.bronze .vert-line,.ut19.tots.bronze .horz-line{
+    background:#d1a77e
+  }
+  .ut19.card-tiny.pcdisplay.legend{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/icon.png?v=15");
+    border:none;
+    color:#685624
+  }
+  .ut19.tiny.big.legend{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/icon.png?v=15");
+    border:none;
+    color:#685624
+  }
+  .ut19.card-med.pcdisplay.legend{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/icon.png?v=15");
+    border:none;
+    color:#685624
+  }
+  .ut19.card-regular.pcdisplay.legend{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/icon.png?v=15");
+    border:none;
+    color:#685624
+  }
+  .ut19.card-hd.pcdisplay.legend{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/icon.png?v=15");
+    border:none;
+    color:#685624
+  }
+  .ut19.legend .vert-line,.ut19.legend .horz-line{
+    background:#685624
+  }
+  .ut19.card-tiny.pcdisplay.oldimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/orangec.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.tiny.big.oldimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/orangec.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-med.pcdisplay.oldimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/orangec.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-regular.pcdisplay.oldimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/orangec.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-hd.pcdisplay.oldimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/orangec.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.oldimotm .vert-line,.ut19.oldimotm .horz-line{
+    background:#fff
+  }
+  .ut19.card-tiny.pcdisplay.imotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/imotmc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.tiny.big.imotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/imotmc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-med.pcdisplay.imotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/imotmc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-regular.pcdisplay.imotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/imotmc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-hd.pcdisplay.imotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/imotmc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.imotm .vert-line,.ut19.imotm .horz-line{
+    background:#fff
+  }
+  .ut19.card-tiny.pcdisplay.futties-winners{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/futties.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.tiny.big.futties-winners{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/futties.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.card-med.pcdisplay.futties-winners{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/futties.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.card-regular.pcdisplay.futties-winners{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/futties.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.card-hd.pcdisplay.futties-winners{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/futties.png?v=15");
+    border:none;
+    color:#E6E6E6
+  }
+  .ut19.futties-winners .vert-line,.ut19.futties-winners .horz-line{
+    background:#be6387
+  }
+  .ut19.pcdisplay.futties-winners .top-overlay{
+    background:#560e33;
+    background:linear-gradient(180deg, rgba(86,14,51,0) 10%, rgba(86,14,51,0.65) 64%, rgba(86,14,51,0.55) 89%, rgba(86,14,51,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.storymode{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/storymode.png?v=15");
+    border:none;
+    color:#f5f4f4
+  }
+  .ut19.tiny.big.storymode{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/storymode.png?v=15");
+    border:none;
+    color:#f5f4f4
+  }
+  .ut19.card-med.pcdisplay.storymode{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/storymode.png?v=15");
+    border:none;
+    color:#f5f4f4
+  }
+  .ut19.card-regular.pcdisplay.storymode{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/storymode.png?v=15");
+    border:none;
+    color:#f5f4f4
+  }
+  .ut19.card-hd.pcdisplay.storymode{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/storymode.png?v=15");
+    border:none;
+    color:#f5f4f4
+  }
+  .ut19.storymode .vert-line,.ut19.storymode .horz-line{
+    background:#f5f4f4
+  }
+  .ut19.card-tiny.pcdisplay.fut-champ.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/champion_gold.png?v=15");
+    border:none;
+    color:#E3CF83
+  }
+  .ut19.tiny.big.fut-champ.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/champion_gold.png?v=15");
+    border:none;
+    color:#E3CF83
+  }
+  .ut19.card-med.pcdisplay.fut-champ.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/champion_gold.png?v=15");
+    border:none;
+    color:#E3CF83
+  }
+  .ut19.card-regular.pcdisplay.fut-champ.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/champion_gold.png?v=15");
+    border:none;
+    color:#E3CF83
+  }
+  .ut19.card-hd.pcdisplay.fut-champ.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/champion_gold.png?v=15");
+    border:none;
+    color:#E3CF83
+  }
+  .ut19.fut-champ.gold .vert-line,.ut19.fut-champ.gold .horz-line{
+    background:#BAA865
+  }
+  .ut19.card-tiny.pcdisplay.fut-champ.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/champion_silver.png?v=15");
+    border:none;
+    color:#BDC3C9
+  }
+  .ut19.tiny.big.fut-champ.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/champion_silver.png?v=15");
+    border:none;
+    color:#BDC3C9
+  }
+  .ut19.card-med.pcdisplay.fut-champ.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/champion_silver.png?v=15");
+    border:none;
+    color:#BDC3C9
+  }
+  .ut19.card-regular.pcdisplay.fut-champ.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/champion_silver.png?v=15");
+    border:none;
+    color:#BDC3C9
+  }
+  .ut19.card-hd.pcdisplay.fut-champ.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/champion_silver.png?v=15");
+    border:none;
+    color:#BDC3C9
+  }
+  .ut19.fut-champ.silver .vert-line,.ut19.fut-champ.silver .horz-line{
+    background:#A2A7AD
+  }
+  .ut19.card-tiny.pcdisplay.fut-champ.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/champion_bronze.png?v=15");
+    border:none;
+    color:#D2AC8A
+  }
+  .ut19.tiny.big.fut-champ.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/champion_bronze.png?v=15");
+    border:none;
+    color:#D2AC8A
+  }
+  .ut19.card-med.pcdisplay.fut-champ.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/champion_bronze.png?v=15");
+    border:none;
+    color:#D2AC8A
+  }
+  .ut19.card-regular.pcdisplay.fut-champ.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/champion_bronze.png?v=15");
+    border:none;
+    color:#D2AC8A
+  }
+  .ut19.card-hd.pcdisplay.fut-champ.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/champion_bronze.png?v=15");
+    border:none;
+    color:#D2AC8A
+  }
+  .ut19.fut-champ.bronze .vert-line,.ut19.fut-champ.bronze .horz-line{
+    background:#B79678
+  }
+  .ut19.card-tiny.pcdisplay.confmotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/confed_blue_orange_motm.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.tiny.big.confmotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/confed_blue_orange_motm.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-med.pcdisplay.confmotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/confed_blue_orange_motm.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-regular.pcdisplay.confmotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/confed_blue_orange_motm.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-hd.pcdisplay.confmotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/confed_blue_orange_motm.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.confmotm .vert-line,.ut19.confmotm .horz-line{
+    background:#fff
+  }
+  .ut19.card-tiny.pcdisplay.newimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/imotmc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.tiny.big.newimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/imotmc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-med.pcdisplay.newimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/imotmc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-regular.pcdisplay.newimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/imotmc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-hd.pcdisplay.newimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/imotmc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.newimotm .vert-line,.ut19.newimotm .horz-line{
+    background:#fff
+  }
+  .ut19.card-tiny.pcdisplay.otw{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/otw.png?v=15");
+    border:none;
+    color:#FF4782
+  }
+  .ut19.tiny.big.otw{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/otw.png?v=15");
+    border:none;
+    color:#FF4782
+  }
+  .ut19.card-med.pcdisplay.otw{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/otw.png?v=15");
+    border:none;
+    color:#FF4782
+  }
+  .ut19.card-regular.pcdisplay.otw{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/otw.png?v=15");
+    border:none;
+    color:#FF4782
+  }
+  .ut19.card-hd.pcdisplay.otw{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/otw.png?v=15");
+    border:none;
+    color:#FF4782
+  }
+  .ut19.otw .vert-line,.ut19.otw .horz-line{
+    background:#305cc4
+  }
+  .ut19.pcdisplay.otw .top-overlay{
+    background:#000a2d;
+    background:linear-gradient(180deg, rgba(0,10,45,0) 10%, rgba(0,10,45,0.65) 64%, rgba(0,10,45,0.55) 89%, rgba(0,10,45,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.halloween{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/halloween.png?v=15");
+    border:none;
+    color:#FF690D
+  }
+  .ut19.tiny.big.halloween{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/halloween.png?v=15");
+    border:none;
+    color:#FF690D
+  }
+  .ut19.card-med.pcdisplay.halloween{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/halloween.png?v=15");
+    border:none;
+    color:#FF690D
+  }
+  .ut19.card-regular.pcdisplay.halloween{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/halloween.png?v=15");
+    border:none;
+    color:#FF690D
+  }
+  .ut19.card-hd.pcdisplay.halloween{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/halloween.png?v=15");
+    border:none;
+    color:#FF690D
+  }
+  .ut19.halloween .vert-line,.ut19.halloween .horz-line{
+    background:#A74F14
+  }
+  .ut19.pcdisplay.halloween .top-overlay{
+    background:#160806;
+    background:linear-gradient(180deg, rgba(22,8,6,0) 10%, rgba(22,8,6,0.65) 64%, rgba(22,8,6,0.55) 89%, rgba(22,8,6,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/sbc.png?v=15");
+    border:none;
+    color:#72C0FF
+  }
+  .ut19.tiny.big.sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/sbc.png?v=15");
+    border:none;
+    color:#72C0FF
+  }
+  .ut19.card-med.pcdisplay.sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/sbc.png?v=15");
+    border:none;
+    color:#72C0FF
+  }
+  .ut19.card-regular.pcdisplay.sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/sbc.png?v=15");
+    border:none;
+    color:#72C0FF
+  }
+  .ut19.card-hd.pcdisplay.sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/sbc.png?v=15");
+    border:none;
+    color:#72C0FF
+  }
+  .ut19.sbc .vert-line,.ut19.sbc .horz-line{
+    background:#5CA3DC
+  }
+  .ut19.pcdisplay.sbc .top-overlay{
+    background:#7f197e;
+    background:linear-gradient(180deg, rgba(127,25,126,0) 10%, rgba(127,25,126,0.65) 64%, rgba(127,25,126,0.55) 89%, rgba(127,25,126,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.sbc_premium{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/sbc_premium.png?v=15");
+    border:none;
+    color:#FD95F6
+  }
+  .ut19.tiny.big.sbc_premium{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/sbc_premium.png?v=15");
+    border:none;
+    color:#FD95F6
+  }
+  .ut19.card-med.pcdisplay.sbc_premium{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/sbc_premium.png?v=15");
+    border:none;
+    color:#FD95F6
+  }
+  .ut19.card-regular.pcdisplay.sbc_premium{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/sbc_premium.png?v=15");
+    border:none;
+    color:#FD95F6
+  }
+  .ut19.card-hd.pcdisplay.sbc_premium{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/sbc_premium.png?v=15");
+    border:none;
+    color:#FD95F6
+  }
+  .ut19.sbc_premium .vert-line,.ut19.sbc_premium .horz-line{
+    background:#DF77D8
+  }
+  .ut19.pcdisplay.sbc_premium .top-overlay{
+    background:#522f83;
+    background:linear-gradient(180deg, rgba(82,47,131,0) 10%, rgba(82,47,131,0.65) 64%, rgba(82,47,131,0.55) 89%, rgba(82,47,131,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.promo{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/promoa.png?v=15");
+    border:none;
+    color:#155895
+  }
+  .ut19.tiny.big.promo{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/promoa.png?v=15");
+    border:none;
+    color:#155895
+  }
+  .ut19.card-med.pcdisplay.promo{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/promoa.png?v=15");
+    border:none;
+    color:#155895
+  }
+  .ut19.card-regular.pcdisplay.promo{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/promoa.png?v=15");
+    border:none;
+    color:#155895
+  }
+  .ut19.card-hd.pcdisplay.promo{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/promoa.png?v=15");
+    border:none;
+    color:#155895
+  }
+  .ut19.promo .vert-line,.ut19.promo .horz-line{
+    background:#155895
+  }
+  .ut19.card-tiny.pcdisplay.tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/tott.png?v=15");
+    border:none;
+    color:#155895
+  }
+  .ut19.tiny.big.tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/tott.png?v=15");
+    border:none;
+    color:#155895
+  }
+  .ut19.card-med.pcdisplay.tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tott.png?v=15");
+    border:none;
+    color:#155895
+  }
+  .ut19.card-regular.pcdisplay.tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tott.png?v=15");
+    border:none;
+    color:#155895
+  }
+  .ut19.card-hd.pcdisplay.tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/tott.png?v=15");
+    border:none;
+    color:#155895
+  }
+  .ut19.tott .vert-line,.ut19.tott .horz-line{
+    background:#155895
+  }
+  .ut19.card-tiny.pcdisplay.white-blue-mls{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/promob.png?v=15");
+    border:none;
+    color:#000
+  }
+  .ut19.tiny.big.white-blue-mls{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/promob.png?v=15");
+    border:none;
+    color:#000
+  }
+  .ut19.card-med.pcdisplay.white-blue-mls{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/promob.png?v=15");
+    border:none;
+    color:#000
+  }
+  .ut19.card-regular.pcdisplay.white-blue-mls{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/promob.png?v=15");
+    border:none;
+    color:#000
+  }
+  .ut19.card-hd.pcdisplay.white-blue-mls{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/promob.png?v=15");
+    border:none;
+    color:#000
+  }
+  .ut19.white-blue-mls .vert-line,.ut19.white-blue-mls .horz-line{
+    background:#000
+  }
+  .ut19.card-tiny.pcdisplay.fut-bd{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/promob.png?v=15");
+    border:none;
+    color:#105d71
+  }
+  .ut19.tiny.big.fut-bd{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/promob.png?v=15");
+    border:none;
+    color:#105d71
+  }
+  .ut19.card-med.pcdisplay.fut-bd{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/promob.png?v=15");
+    border:none;
+    color:#105d71
+  }
+  .ut19.card-regular.pcdisplay.fut-bd{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/promob.png?v=15");
+    border:none;
+    color:#105d71
+  }
+  .ut19.card-hd.pcdisplay.fut-bd{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/promob.png?v=15");
+    border:none;
+    color:#105d71
+  }
+  .ut19.fut-bd .vert-line,.ut19.fut-bd .horz-line{
+    background:#2c977c
+  }
+  .ut19.pcdisplay.fut-bd .top-overlay{
+    background:#1d977d;
+    background:linear-gradient(180deg, rgba(29,151,125,0) 10%, rgba(29,151,125,0.65) 64%, rgba(29,151,125,0.55) 89%, rgba(29,151,125,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.award-winner{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/purple_award_winner.png?v=15");
+    border:none;
+    color:#C0FF36
+  }
+  .ut19.tiny.big.award-winner{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/purple_award_winner.png?v=15");
+    border:none;
+    color:#C0FF36
+  }
+  .ut19.card-med.pcdisplay.award-winner{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/purple_award_winner.png?v=15");
+    border:none;
+    color:#C0FF36
+  }
+  .ut19.card-regular.pcdisplay.award-winner{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/purple_award_winner.png?v=15");
+    border:none;
+    color:#C0FF36
+  }
+  .ut19.card-hd.pcdisplay.award-winner{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/purple_award_winner.png?v=15");
+    border:none;
+    color:#C0FF36
+  }
+  .ut19.award-winner .vert-line,.ut19.award-winner .horz-line{
+    background:#95C826
+  }
+  .ut19.pcdisplay.award-winner .top-overlay{
+    background:#28065e;
+    background:linear-gradient(180deg, rgba(40,6,94,0) 10%, rgba(40,6,94,0.65) 64%, rgba(40,6,94,0.55) 89%, rgba(40,6,94,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.concept{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/conceptc.png?v=15");
+    border:none;
+    color:#dff0ff
+  }
+  .ut19.tiny.big.concept{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/conceptc.png?v=15");
+    border:none;
+    color:#dff0ff
+  }
+  .ut19.card-med.pcdisplay.concept{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/conceptc.png?v=15");
+    border:none;
+    color:#dff0ff
+  }
+  .ut19.card-regular.pcdisplay.concept{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/conceptc.png?v=15");
+    border:none;
+    color:#dff0ff
+  }
+  .ut19.card-hd.pcdisplay.concept{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/conceptc.png?v=15");
+    border:none;
+    color:#dff0ff
+  }
+  .ut19.concept .vert-line,.ut19.concept .horz-line{
+    background:#dff0ff
+  }
+  .ut19.card-tiny.pcdisplay.icon{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/icon.png?v=15");
+    border:none;
+    color:#625217
+  }
+  .ut19.tiny.big.icon{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/icon.png?v=15");
+    border:none;
+    color:#625217
+  }
+  .ut19.card-med.pcdisplay.icon{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/icon.png?v=15");
+    border:none;
+    color:#625217
+  }
+  .ut19.card-regular.pcdisplay.icon{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/icon.png?v=15");
+    border:none;
+    color:#625217
+  }
+  .ut19.card-hd.pcdisplay.icon{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/icon.png?v=15");
+    border:none;
+    color:#625217
+  }
+  .ut19.icon .vert-line,.ut19.icon .horz-line{
+    background:#fff
+  }
+  .ut19.pcdisplay.icon .top-overlay{
+    background:#e9e6dd;
+    background:linear-gradient(180deg, rgba(233,230,221,0) 10%, rgba(233,230,221,0.65) 64%, rgba(233,230,221,0.55) 89%, rgba(233,230,221,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.marquee{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/marquee.png?v=15");
+    border:none;
+    color:#c0ff36
+  }
+  .ut19.tiny.big.marquee{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/marquee.png?v=15");
+    border:none;
+    color:#c0ff36
+  }
+  .ut19.card-med.pcdisplay.marquee{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/marquee.png?v=15");
+    border:none;
+    color:#c0ff36
+  }
+  .ut19.card-regular.pcdisplay.marquee{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/marquee.png?v=15");
+    border:none;
+    color:#c0ff36
+  }
+  .ut19.card-hd.pcdisplay.marquee{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/marquee.png?v=15");
+    border:none;
+    color:#c0ff36
+  }
+  .ut19.marquee .vert-line,.ut19.marquee .horz-line{
+    background:#c0ff36
+  }
+  .ut19.card-tiny.pcdisplay.motm_eu{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/motm_eu.png?v=15");
+    border:none;
+    color:#1b51a3
+  }
+  .ut19.tiny.big.motm_eu{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/motm_eu.png?v=15");
+    border:none;
+    color:#1b51a3
+  }
+  .ut19.card-med.pcdisplay.motm_eu{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/motm_eu.png?v=15");
+    border:none;
+    color:#1b51a3
+  }
+  .ut19.card-regular.pcdisplay.motm_eu{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/motm_eu.png?v=15");
+    border:none;
+    color:#1b51a3
+  }
+  .ut19.card-hd.pcdisplay.motm_eu{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/motm_eu.png?v=15");
+    border:none;
+    color:#1b51a3
+  }
+  .ut19.motm_eu .vert-line,.ut19.motm_eu .horz-line{
+    background:#1b51a3
+  }
+  .ut19.card-tiny.pcdisplay.united{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/united.png?v=15");
+    border:none;
+    color:#201c55
+  }
+  .ut19.tiny.big.united{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/united.png?v=15");
+    border:none;
+    color:#201c55
+  }
+  .ut19.card-med.pcdisplay.united{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/united.png?v=15");
+    border:none;
+    color:#201c55
+  }
+  .ut19.card-regular.pcdisplay.united{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/united.png?v=15");
+    border:none;
+    color:#201c55
+  }
+  .ut19.card-hd.pcdisplay.united{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/united.png?v=15");
+    border:none;
+    color:#201c55
+  }
+  .ut19.united .vert-line,.ut19.united .horz-line{
+    background:#201c55
+  }
+  .ut19.card-tiny.pcdisplay.futmas{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/futmas.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.tiny.big.futmas{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/futmas.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-med.pcdisplay.futmas{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/futmas.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-regular.pcdisplay.futmas{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/futmas.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-hd.pcdisplay.futmas{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/futmas.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.futmas .vert-line,.ut19.futmas .horz-line{
+    background:#19c16e
+  }
+  .ut19.pcdisplay.futmas .top-overlay{
+    background:#640c10;
+    background:linear-gradient(180deg, rgba(100,12,16,0) 10%, rgba(100,12,16,0.65) 64%, rgba(100,12,16,0.55) 89%, rgba(100,12,16,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.fof{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/fof.png?v=15");
+    border:none;
+    color:#201d55
+  }
+  .ut19.tiny.big.fof{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/fof.png?v=15");
+    border:none;
+    color:#201d55
+  }
+  .ut19.card-med.pcdisplay.fof{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/fof.png?v=15");
+    border:none;
+    color:#201d55
+  }
+  .ut19.card-regular.pcdisplay.fof{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/fof.png?v=15");
+    border:none;
+    color:#201d55
+  }
+  .ut19.card-hd.pcdisplay.fof{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/fof.png?v=15");
+    border:none;
+    color:#201d55
+  }
+  .ut19.fof .vert-line,.ut19.fof .horz-line{
+    background:#201d55
+  }
+  .ut19.card-tiny.pcdisplay.championship{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/championship.png?v=15");
+    border:none;
+    color:#04094d
+  }
+  .ut19.tiny.big.championship{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/championship.png?v=15");
+    border:none;
+    color:#04094d
+  }
+  .ut19.card-med.pcdisplay.championship{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/championship.png?v=15");
+    border:none;
+    color:#04094d
+  }
+  .ut19.card-regular.pcdisplay.championship{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/championship.png?v=15");
+    border:none;
+    color:#04094d
+  }
+  .ut19.card-hd.pcdisplay.championship{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/championship.png?v=15");
+    border:none;
+    color:#04094d
+  }
+  .ut19.championship .vert-line,.ut19.championship .horz-line{
+    background:#04094d
+  }
+  .ut19.card-tiny.pcdisplay.rrr.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/rrr_gold.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.tiny.big.rrr.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/rrr_gold.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-med.pcdisplay.rrr.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/rrr_gold.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-regular.pcdisplay.rrr.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/rrr_gold.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-hd.pcdisplay.rrr.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/rrr_gold.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.rrr.gold .vert-line,.ut19.rrr.gold .horz-line{
+    background:#fff
+  }
+  .ut19.card-tiny.pcdisplay.rrc.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/rrc_gold.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.tiny.big.rrc.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/rrc_gold.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-med.pcdisplay.rrc.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/rrc_gold.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-regular.pcdisplay.rrc.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/rrc_gold.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-hd.pcdisplay.rrc.gold{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/rrc_gold.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.rrc.gold .vert-line,.ut19.rrc.gold .horz-line{
+    background:#fff
+  }
+  .ut19.card-tiny.pcdisplay.rrr.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/rrr_silver.png?v=15");
+    border:none;
+    color:#2e3136
+  }
+  .ut19.tiny.big.rrr.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/rrr_silver.png?v=15");
+    border:none;
+    color:#2e3136
+  }
+  .ut19.card-med.pcdisplay.rrr.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/rrr_silver.png?v=15");
+    border:none;
+    color:#2e3136
+  }
+  .ut19.card-regular.pcdisplay.rrr.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/rrr_silver.png?v=15");
+    border:none;
+    color:#2e3136
+  }
+  .ut19.card-hd.pcdisplay.rrr.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/rrr_silver.png?v=15");
+    border:none;
+    color:#2e3136
+  }
+  .ut19.rrr.silver .vert-line,.ut19.rrr.silver .horz-line{
+    background:#2e3136
+  }
+  .ut19.card-tiny.pcdisplay.rrc.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/rrc_silver.png?v=15");
+    border:none;
+    color:#2e3136
+  }
+  .ut19.tiny.big.rrc.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/rrc_silver.png?v=15");
+    border:none;
+    color:#2e3136
+  }
+  .ut19.card-med.pcdisplay.rrc.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/rrc_silver.png?v=15");
+    border:none;
+    color:#2e3136
+  }
+  .ut19.card-regular.pcdisplay.rrc.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/rrc_silver.png?v=15");
+    border:none;
+    color:#2e3136
+  }
+  .ut19.card-hd.pcdisplay.rrc.silver{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/rrc_silver.png?v=15");
+    border:none;
+    color:#2e3136
+  }
+  .ut19.rrc.silver .vert-line,.ut19.rrc.silver .horz-line{
+    background:#2e3136
+  }
+  .ut19.card-tiny.pcdisplay.rrr.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/rrr_bronze.png?v=15");
+    border:none;
+    color:#452d17
+  }
+  .ut19.tiny.big.rrr.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/rrr_bronze.png?v=15");
+    border:none;
+    color:#452d17
+  }
+  .ut19.card-med.pcdisplay.rrr.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/rrr_bronze.png?v=15");
+    border:none;
+    color:#452d17
+  }
+  .ut19.card-regular.pcdisplay.rrr.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/rrr_bronze.png?v=15");
+    border:none;
+    color:#452d17
+  }
+  .ut19.card-hd.pcdisplay.rrr.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/rrr_bronze.png?v=15");
+    border:none;
+    color:#452d17
+  }
+  .ut19.rrr.bronze .vert-line,.ut19.rrr.bronze .horz-line{
+    background:#452d17
+  }
+  .ut19.card-tiny.pcdisplay.rrc.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/rrc_bronze.png?v=15");
+    border:none;
+    color:#452d17
+  }
+  .ut19.tiny.big.rrc.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/rrc_bronze.png?v=15");
+    border:none;
+    color:#452d17
+  }
+  .ut19.card-med.pcdisplay.rrc.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/rrc_bronze.png?v=15");
+    border:none;
+    color:#452d17
+  }
+  .ut19.card-regular.pcdisplay.rrc.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/rrc_bronze.png?v=15");
+    border:none;
+    color:#452d17
+  }
+  .ut19.card-hd.pcdisplay.rrc.bronze{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/rrc_bronze.png?v=15");
+    border:none;
+    color:#452d17
+  }
+  .ut19.rrc.bronze .vert-line,.ut19.rrc.bronze .horz-line{
+    background:#452d17
+  }
+  .ut19.card-tiny.pcdisplay.empty_card{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/empty-card.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.tiny.big.empty_card{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/empty-card.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-med.pcdisplay.empty_card{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/empty-card.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-regular.pcdisplay.empty_card{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/empty-card.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-hd.pcdisplay.empty_card{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/empty-card.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.empty_card .vert-line,.ut19.empty_card .horz-line{
+    background:#fff
+  }
+  .ut19.card-tiny.pcdisplay.oldimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/orangec.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.tiny.big.oldimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/orangec.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-med.pcdisplay.oldimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/orangec.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-regular.pcdisplay.oldimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/orangec.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-hd.pcdisplay.oldimotm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/orangec.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.oldimotm .vert-line,.ut19.oldimotm .horz-line{
+    background:#fff
+  }
+  .ut19.card-tiny.pcdisplay.ucl-non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_non_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.tiny.big.ucl-non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_non_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-med.pcdisplay.ucl-non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_non_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-regular.pcdisplay.ucl-non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_non_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-hd.pcdisplay.ucl-non-rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/ucl_non_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.ucl-non-rare .vert-line,.ut19.ucl-non-rare .horz-line{
+    background:#5AF7DC
+  }
+  .ut19.pcdisplay.ucl-non-rare .top-overlay{
+    background:#050b7e;
+    background:linear-gradient(180deg, rgba(5,11,126,0) 10%, rgba(5,11,126,0.65) 64%, rgba(5,11,126,0.55) 89%, rgba(5,11,126,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.ucl.rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.tiny.big.ucl.rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-med.pcdisplay.ucl.rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-regular.pcdisplay.ucl.rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-hd.pcdisplay.ucl.rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/ucl_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.ucl.rare .vert-line,.ut19.ucl.rare .horz-line{
+    background:#5AF7DC
+  }
+  .ut19.pcdisplay.ucl.rare .top-overlay{
+    background:#050b7e;
+    background:linear-gradient(180deg, rgba(5,11,126,0) 10%, rgba(5,11,126,0.65) 64%, rgba(5,11,126,0.55) 89%, rgba(5,11,126,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.ucl_rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.tiny.big.ucl_rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-med.pcdisplay.ucl_rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-regular.pcdisplay.ucl_rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-hd.pcdisplay.ucl_rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/ucl_rare.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.ucl_rare .vert-line,.ut19.ucl_rare .horz-line{
+    background:#5AF7DC
+  }
+  .ut19.pcdisplay.ucl_rare .top-overlay{
+    background:#050b7e;
+    background:linear-gradient(180deg, rgba(5,11,126,0) 10%, rgba(5,11,126,0.65) 64%, rgba(5,11,126,0.55) 89%, rgba(5,11,126,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.ucl_non_rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_non_rare.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.tiny.big.ucl_non_rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_non_rare.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-med.pcdisplay.ucl_non_rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_non_rare.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-regular.pcdisplay.ucl_non_rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_non_rare.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-hd.pcdisplay.ucl_non_rare{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/ucl_non_rare.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.ucl_non_rare .vert-line,.ut19.ucl_non_rare .horz-line{
+    background:#5AF7DC
+  }
+  .ut19.pcdisplay.ucl_non_rare .top-overlay{
+    background:#050b7e;
+    background:linear-gradient(180deg, rgba(5,11,126,0) 10%, rgba(5,11,126,0.65) 64%, rgba(5,11,126,0.55) 89%, rgba(5,11,126,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.potm_bundesliga{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/potm_bundesliga.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.tiny.big.potm_bundesliga{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/potm_bundesliga.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-med.pcdisplay.potm_bundesliga{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/potm_bundesliga.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-regular.pcdisplay.potm_bundesliga{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/potm_bundesliga.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-hd.pcdisplay.potm_bundesliga{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/potm_bundesliga.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.potm_bundesliga .vert-line,.ut19.potm_bundesliga .horz-line{
+    background:#fff
+  }
+  .ut19.pcdisplay.potm_bundesliga .top-overlay{
+    background:#8b030e;
+    background:linear-gradient(180deg, rgba(139,3,14,0) 10%, rgba(139,3,14,0.65) 64%, rgba(139,3,14,0.55) 89%, rgba(139,3,14,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.potm_epl{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/potm_epl.png?v=15");
+    border:none;
+    color:#25D9F1
+  }
+  .ut19.tiny.big.potm_epl{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/potm_epl.png?v=15");
+    border:none;
+    color:#25D9F1
+  }
+  .ut19.card-med.pcdisplay.potm_epl{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/potm_epl.png?v=15");
+    border:none;
+    color:#25D9F1
+  }
+  .ut19.card-regular.pcdisplay.potm_epl{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/potm_epl.png?v=15");
+    border:none;
+    color:#25D9F1
+  }
+  .ut19.card-hd.pcdisplay.potm_epl{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/potm_epl.png?v=15");
+    border:none;
+    color:#25D9F1
+  }
+  .ut19.potm_epl .vert-line,.ut19.potm_epl .horz-line{
+    background:#380341
+  }
+  .ut19.pcdisplay.potm_epl .top-overlay{
+    background:#31023a;
+    background:linear-gradient(180deg, rgba(49,2,58,0) 10%, rgba(49,2,58,0.65) 64%, rgba(49,2,58,0.55) 89%, rgba(49,2,58,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.europa_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/europa_sbc.png?v=15");
+    border:none;
+    color:#2A1F10
+  }
+  .ut19.tiny.big.europa_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/europa_sbc.png?v=15");
+    border:none;
+    color:#2A1F10
+  }
+  .ut19.card-med.pcdisplay.europa_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/europa_sbc.png?v=15");
+    border:none;
+    color:#2A1F10
+  }
+  .ut19.card-regular.pcdisplay.europa_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/europa_sbc.png?v=15");
+    border:none;
+    color:#2A1F10
+  }
+  .ut19.card-hd.pcdisplay.europa_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/europa_sbc.png?v=15");
+    border:none;
+    color:#2A1F10
+  }
+  .ut19.europa_sbc .vert-line,.ut19.europa_sbc .horz-line{
+    background:#F5F5F5
+  }
+  .ut19.pcdisplay.europa_sbc .top-overlay{
+    background:#ef8e00;
+    background:linear-gradient(180deg, rgba(239,142,0,0) 10%, rgba(239,142,0,0.65) 64%, rgba(239,142,0,0.55) 89%, rgba(239,142,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.europa_motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/europa_motm.png?v=15");
+    border:none;
+    color:#2A1F10
+  }
+  .ut19.tiny.big.europa_motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/europa_motm.png?v=15");
+    border:none;
+    color:#2A1F10
+  }
+  .ut19.card-med.pcdisplay.europa_motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/europa_motm.png?v=15");
+    border:none;
+    color:#2A1F10
+  }
+  .ut19.card-regular.pcdisplay.europa_motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/europa_motm.png?v=15");
+    border:none;
+    color:#2A1F10
+  }
+  .ut19.card-hd.pcdisplay.europa_motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/europa_motm.png?v=15");
+    border:none;
+    color:#2A1F10
+  }
+  .ut19.europa_motm .vert-line,.ut19.europa_motm .horz-line{
+    background:#D5D5D5
+  }
+  .ut19.card-tiny.pcdisplay.europa_live{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/europa_live.png?v=15");
+    border:none;
+    color:#F39200
+  }
+  .ut19.tiny.big.europa_live{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/europa_live.png?v=15");
+    border:none;
+    color:#F39200
+  }
+  .ut19.card-med.pcdisplay.europa_live{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/europa_live.png?v=15");
+    border:none;
+    color:#F39200
+  }
+  .ut19.card-regular.pcdisplay.europa_live{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/europa_live.png?v=15");
+    border:none;
+    color:#F39200
+  }
+  .ut19.card-hd.pcdisplay.europa_live{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/europa_live.png?v=15");
+    border:none;
+    color:#F39200
+  }
+  .ut19.europa_live .vert-line,.ut19.europa_live .horz-line{
+    background:#D5D5D5
+  }
+  .ut19.pcdisplay.europa_live .top-overlay{
+    background:#0a0a0a;
+    background:linear-gradient(180deg, rgba(10,10,10,0) 10%, rgba(10,10,10,0.65) 64%, rgba(10,10,10,0.55) 89%, rgba(10,10,10,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.europa_tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/europa_tott.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.tiny.big.europa_tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/europa_tott.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-med.pcdisplay.europa_tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/europa_tott.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-regular.pcdisplay.europa_tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/europa_tott.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-hd.pcdisplay.europa_tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/europa_tott.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.europa_tott .vert-line,.ut19.europa_tott .horz-line{
+    background:#F39200
+  }
+  .ut19.pcdisplay.europa_tott .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.ucl_motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_motm.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.tiny.big.ucl_motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_motm.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-med.pcdisplay.ucl_motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_motm.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-regular.pcdisplay.ucl_motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_motm.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-hd.pcdisplay.ucl_motm{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/ucl_motm.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.ucl_motm .vert-line,.ut19.ucl_motm .horz-line{
+    background:#C6C9E2
+  }
+  .ut19.pcdisplay.ucl_motm .top-overlay{
+    background:#0c1980;
+    background:linear-gradient(180deg, rgba(12,25,128,0) 10%, rgba(12,25,128,0.65) 64%, rgba(12,25,128,0.55) 89%, rgba(12,25,128,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.ucl_live{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_live.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.tiny.big.ucl_live{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_live.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-med.pcdisplay.ucl_live{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_live.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-regular.pcdisplay.ucl_live{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_live.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-hd.pcdisplay.ucl_live{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/ucl_live.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.ucl_live .vert-line,.ut19.ucl_live .horz-line{
+    background:#C6C9E2
+  }
+  .ut19.pcdisplay.ucl_live .top-overlay{
+    background:#000324;
+    background:linear-gradient(180deg, rgba(0,3,36,0) 10%, rgba(0,3,36,0.65) 64%, rgba(0,3,36,0.55) 89%, rgba(0,3,36,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.flashback_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/flashback_sbc.png?v=15");
+    border:none;
+    color:#E4D7BC
+  }
+  .ut19.tiny.big.flashback_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/flashback_sbc.png?v=15");
+    border:none;
+    color:#E4D7BC
+  }
+  .ut19.card-med.pcdisplay.flashback_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/flashback_sbc.png?v=15");
+    border:none;
+    color:#E4D7BC
+  }
+  .ut19.card-regular.pcdisplay.flashback_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/flashback_sbc.png?v=15");
+    border:none;
+    color:#E4D7BC
+  }
+  .ut19.card-hd.pcdisplay.flashback_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/flashback_sbc.png?v=15");
+    border:none;
+    color:#E4D7BC
+  }
+  .ut19.flashback_sbc .vert-line,.ut19.flashback_sbc .horz-line{
+    background:#B0AC99
+  }
+  .ut19.pcdisplay.flashback_sbc .top-overlay{
+    background:#6c735e;
+    background:linear-gradient(180deg, rgba(108,115,94,0) 10%, rgba(108,115,94,0.65) 64%, rgba(108,115,94,0.55) 89%, rgba(108,115,94,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.sbc_flashback{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/flashback_sbc.png?v=15");
+    border:none;
+    color:#E4D7BC
+  }
+  .ut19.tiny.big.sbc_flashback{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/flashback_sbc.png?v=15");
+    border:none;
+    color:#E4D7BC
+  }
+  .ut19.card-med.pcdisplay.sbc_flashback{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/flashback_sbc.png?v=15");
+    border:none;
+    color:#E4D7BC
+  }
+  .ut19.card-regular.pcdisplay.sbc_flashback{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/flashback_sbc.png?v=15");
+    border:none;
+    color:#E4D7BC
+  }
+  .ut19.card-hd.pcdisplay.sbc_flashback{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/flashback_sbc.png?v=15");
+    border:none;
+    color:#E4D7BC
+  }
+  .ut19.sbc_flashback .vert-line,.ut19.sbc_flashback .horz-line{
+    background:#B0AC99
+  }
+  .ut19.pcdisplay.sbc_flashback .top-overlay{
+    background:#6c735e;
+    background:linear-gradient(180deg, rgba(108,115,94,0) 10%, rgba(108,115,94,0.65) 64%, rgba(108,115,94,0.55) 89%, rgba(108,115,94,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.swap_deals_1{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_1.png?v=15");
+    border:none;
+    color:#01a4b3
+  }
+  .ut19.tiny.big.swap_deals_1{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_1.png?v=15");
+    border:none;
+    color:#01a4b3
+  }
+  .ut19.card-med.pcdisplay.swap_deals_1{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_1.png?v=15");
+    border:none;
+    color:#01a4b3
+  }
+  .ut19.card-regular.pcdisplay.swap_deals_1{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_1.png?v=15");
+    border:none;
+    color:#01a4b3
+  }
+  .ut19.card-hd.pcdisplay.swap_deals_1{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/swap_deals_1.png?v=15");
+    border:none;
+    color:#01a4b3
+  }
+  .ut19.swap_deals_1 .vert-line,.ut19.swap_deals_1 .horz-line{
+    background:#136B73
+  }
+  .ut19.pcdisplay.swap_deals_1 .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.swap_deals_2{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_2.png?v=15");
+    border:none;
+    color:#00A56E
+  }
+  .ut19.tiny.big.swap_deals_2{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_2.png?v=15");
+    border:none;
+    color:#00A56E
+  }
+  .ut19.card-med.pcdisplay.swap_deals_2{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_2.png?v=15");
+    border:none;
+    color:#00A56E
+  }
+  .ut19.card-regular.pcdisplay.swap_deals_2{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_2.png?v=15");
+    border:none;
+    color:#00A56E
+  }
+  .ut19.card-hd.pcdisplay.swap_deals_2{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/swap_deals_2.png?v=15");
+    border:none;
+    color:#00A56E
+  }
+  .ut19.swap_deals_2 .vert-line,.ut19.swap_deals_2 .horz-line{
+    background:#116448
+  }
+  .ut19.pcdisplay.swap_deals_2 .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.swap_deals_3{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_3.png?v=15");
+    border:none;
+    color:#87C546
+  }
+  .ut19.tiny.big.swap_deals_3{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_3.png?v=15");
+    border:none;
+    color:#87C546
+  }
+  .ut19.card-med.pcdisplay.swap_deals_3{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_3.png?v=15");
+    border:none;
+    color:#87C546
+  }
+  .ut19.card-regular.pcdisplay.swap_deals_3{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_3.png?v=15");
+    border:none;
+    color:#87C546
+  }
+  .ut19.card-hd.pcdisplay.swap_deals_3{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/swap_deals_3.png?v=15");
+    border:none;
+    color:#87C546
+  }
+  .ut19.swap_deals_3 .vert-line,.ut19.swap_deals_3 .horz-line{
+    background:#567536
+  }
+  .ut19.pcdisplay.swap_deals_3 .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.swap_deals_4{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_4.png?v=15");
+    border:none;
+    color:#B8C825
+  }
+  .ut19.tiny.big.swap_deals_4{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_4.png?v=15");
+    border:none;
+    color:#B8C825
+  }
+  .ut19.card-med.pcdisplay.swap_deals_4{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_4.png?v=15");
+    border:none;
+    color:#B8C825
+  }
+  .ut19.card-regular.pcdisplay.swap_deals_4{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_4.png?v=15");
+    border:none;
+    color:#B8C825
+  }
+  .ut19.card-hd.pcdisplay.swap_deals_4{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/swap_deals_4.png?v=15");
+    border:none;
+    color:#B8C825
+  }
+  .ut19.swap_deals_4 .vert-line,.ut19.swap_deals_4 .horz-line{
+    background:#6C7422
+  }
+  .ut19.pcdisplay.swap_deals_4 .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.swap_deals_5{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_5.png?v=15");
+    border:none;
+    color:#F4C12C
+  }
+  .ut19.tiny.big.swap_deals_5{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_5.png?v=15");
+    border:none;
+    color:#F4C12C
+  }
+  .ut19.card-med.pcdisplay.swap_deals_5{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_5.png?v=15");
+    border:none;
+    color:#F4C12C
+  }
+  .ut19.card-regular.pcdisplay.swap_deals_5{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_5.png?v=15");
+    border:none;
+    color:#F4C12C
+  }
+  .ut19.card-hd.pcdisplay.swap_deals_5{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/swap_deals_5.png?v=15");
+    border:none;
+    color:#F4C12C
+  }
+  .ut19.swap_deals_5 .vert-line,.ut19.swap_deals_5 .horz-line{
+    background:#8A7126
+  }
+  .ut19.pcdisplay.swap_deals_5 .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.swap_deals_6{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_6.png?v=15");
+    border:none;
+    color:#F27D2A
+  }
+  .ut19.tiny.big.swap_deals_6{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_6.png?v=15");
+    border:none;
+    color:#F27D2A
+  }
+  .ut19.card-med.pcdisplay.swap_deals_6{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_6.png?v=15");
+    border:none;
+    color:#F27D2A
+  }
+  .ut19.card-regular.pcdisplay.swap_deals_6{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_6.png?v=15");
+    border:none;
+    color:#F27D2A
+  }
+  .ut19.card-hd.pcdisplay.swap_deals_6{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/swap_deals_6.png?v=15");
+    border:none;
+    color:#F27D2A
+  }
+  .ut19.swap_deals_6 .vert-line,.ut19.swap_deals_6 .horz-line{
+    background:#8C5128
+  }
+  .ut19.pcdisplay.swap_deals_6 .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.swap_deals_7{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_7.png?v=15");
+    border:none;
+    color:#F24B2A
+  }
+  .ut19.tiny.big.swap_deals_7{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_7.png?v=15");
+    border:none;
+    color:#F24B2A
+  }
+  .ut19.card-med.pcdisplay.swap_deals_7{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_7.png?v=15");
+    border:none;
+    color:#F24B2A
+  }
+  .ut19.card-regular.pcdisplay.swap_deals_7{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_7.png?v=15");
+    border:none;
+    color:#F24B2A
+  }
+  .ut19.card-hd.pcdisplay.swap_deals_7{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/swap_deals_7.png?v=15");
+    border:none;
+    color:#F24B2A
+  }
+  .ut19.swap_deals_7 .vert-line,.ut19.swap_deals_7 .horz-line{
+    background:#8B3827
+  }
+  .ut19.pcdisplay.swap_deals_7 .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.swap_deals_8{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_8.png?v=15");
+    border:none;
+    color:#F72929
+  }
+  .ut19.tiny.big.swap_deals_8{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_8.png?v=15");
+    border:none;
+    color:#F72929
+  }
+  .ut19.card-med.pcdisplay.swap_deals_8{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_8.png?v=15");
+    border:none;
+    color:#F72929
+  }
+  .ut19.card-regular.pcdisplay.swap_deals_8{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_8.png?v=15");
+    border:none;
+    color:#F72929
+  }
+  .ut19.card-hd.pcdisplay.swap_deals_8{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/swap_deals_8.png?v=15");
+    border:none;
+    color:#F72929
+  }
+  .ut19.swap_deals_8 .vert-line,.ut19.swap_deals_8 .horz-line{
+    background:#8E2727
+  }
+  .ut19.pcdisplay.swap_deals_8 .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.swap_deals_9{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_9.png?v=15");
+    border:none;
+    color:#F53960
+  }
+  .ut19.tiny.big.swap_deals_9{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_9.png?v=15");
+    border:none;
+    color:#F53960
+  }
+  .ut19.card-med.pcdisplay.swap_deals_9{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_9.png?v=15");
+    border:none;
+    color:#F53960
+  }
+  .ut19.card-regular.pcdisplay.swap_deals_9{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_9.png?v=15");
+    border:none;
+    color:#F53960
+  }
+  .ut19.card-hd.pcdisplay.swap_deals_9{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/swap_deals_9.png?v=15");
+    border:none;
+    color:#F53960
+  }
+  .ut19.swap_deals_9 .vert-line,.ut19.swap_deals_9 .horz-line{
+    background:#8A2C40
+  }
+  .ut19.pcdisplay.swap_deals_9 .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.swap_deals_10{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_10.png?v=15");
+    border:none;
+    color:#CF3E8D
+  }
+  .ut19.tiny.big.swap_deals_10{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_10.png?v=15");
+    border:none;
+    color:#CF3E8D
+  }
+  .ut19.card-med.pcdisplay.swap_deals_10{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_10.png?v=15");
+    border:none;
+    color:#CF3E8D
+  }
+  .ut19.card-regular.pcdisplay.swap_deals_10{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_10.png?v=15");
+    border:none;
+    color:#CF3E8D
+  }
+  .ut19.card-hd.pcdisplay.swap_deals_10{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/swap_deals_10.png?v=15");
+    border:none;
+    color:#CF3E8D
+  }
+  .ut19.swap_deals_10 .vert-line,.ut19.swap_deals_10 .horz-line{
+    background:#793058
+  }
+  .ut19.pcdisplay.swap_deals_10 .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.swap_deals_11{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_11.png?v=15");
+    border:none;
+    color:#884EBB
+  }
+  .ut19.tiny.big.swap_deals_11{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_11.png?v=15");
+    border:none;
+    color:#884EBB
+  }
+  .ut19.card-med.pcdisplay.swap_deals_11{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_11.png?v=15");
+    border:none;
+    color:#884EBB
+  }
+  .ut19.card-regular.pcdisplay.swap_deals_11{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_11.png?v=15");
+    border:none;
+    color:#884EBB
+  }
+  .ut19.card-hd.pcdisplay.swap_deals_11{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/swap_deals_11.png?v=15");
+    border:none;
+    color:#884EBB
+  }
+  .ut19.swap_deals_11 .vert-line,.ut19.swap_deals_11 .horz-line{
+    background:#573A71
+  }
+  .ut19.pcdisplay.swap_deals_11 .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.swap_deals_rewards{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_rewards.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.tiny.big.swap_deals_rewards{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/swap_deals_rewards.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-med.pcdisplay.swap_deals_rewards{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_rewards.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-regular.pcdisplay.swap_deals_rewards{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/swap_deals_rewards.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-hd.pcdisplay.swap_deals_rewards{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/swap_deals_rewards.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.swap_deals_rewards .vert-line,.ut19.swap_deals_rewards .horz-line{
+    background:#7e259b
+  }
+  .ut19.pcdisplay.swap_deals_rewards .top-overlay{
+    background:#000;
+    background:linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.65) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.ucl_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_sbc.png?v=15");
+    border:none;
+    color:#C6C9E2
+  }
+  .ut19.tiny.big.ucl_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_sbc.png?v=15");
+    border:none;
+    color:#C6C9E2
+  }
+  .ut19.card-med.pcdisplay.ucl_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_sbc.png?v=15");
+    border:none;
+    color:#C6C9E2
+  }
+  .ut19.card-regular.pcdisplay.ucl_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_sbc.png?v=15");
+    border:none;
+    color:#C6C9E2
+  }
+  .ut19.card-hd.pcdisplay.ucl_sbc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/ucl_sbc.png?v=15");
+    border:none;
+    color:#C6C9E2
+  }
+  .ut19.ucl_sbc .vert-line,.ut19.ucl_sbc .horz-line{
+    background:#5AF7DC
+  }
+  .ut19.card-tiny.pcdisplay.ucl_tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_tott.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.tiny.big.ucl_tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/ucl_tott.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-med.pcdisplay.ucl_tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_tott.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-regular.pcdisplay.ucl_tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/ucl_tott.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.card-hd.pcdisplay.ucl_tott{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/ucl_tott.png?v=15");
+    border:none;
+    color:#F5F5F5
+  }
+  .ut19.ucl_tott .vert-line,.ut19.ucl_tott .horz-line{
+    background:#C6C9E2
+  }
+  .ut19.card-tiny.pcdisplay.europa_base{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/europa_base.png?v=15");
+    border:none;
+    color:#F39200
+  }
+  .ut19.tiny.big.europa_base{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/europa_base.png?v=15");
+    border:none;
+    color:#F39200
+  }
+  .ut19.card-med.pcdisplay.europa_base{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/europa_base.png?v=15");
+    border:none;
+    color:#F39200
+  }
+  .ut19.card-regular.pcdisplay.europa_base{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/europa_base.png?v=15");
+    border:none;
+    color:#F39200
+  }
+  .ut19.card-hd.pcdisplay.europa_base{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/europa_base.png?v=15");
+    border:none;
+    color:#F39200
+  }
+  .ut19.europa_base .vert-line,.ut19.europa_base .horz-line{
+    background:#626262
+  }
+  .ut19.pcdisplay.europa_base .top-overlay{
+    background:#212121;
+    background:linear-gradient(180deg, rgba(33,33,33,0) 10%, rgba(33,33,33,0.65) 64%, rgba(33,33,33,0.55) 89%, rgba(33,33,33,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.darkcyanc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/darkcyanc.png?v=15");
+    border:none;
+    color:#20bbd0
+  }
+  .ut19.tiny.big.darkcyanc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/darkcyanc.png?v=15");
+    border:none;
+    color:#20bbd0
+  }
+  .ut19.card-med.pcdisplay.darkcyanc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/darkcyanc.png?v=15");
+    border:none;
+    color:#20bbd0
+  }
+  .ut19.card-regular.pcdisplay.darkcyanc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/darkcyanc.png?v=15");
+    border:none;
+    color:#20bbd0
+  }
+  .ut19.card-hd.pcdisplay.darkcyanc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/darkcyanc.png?v=15");
+    border:none;
+    color:#20bbd0
+  }
+  .ut19.darkcyanc .vert-line,.ut19.darkcyanc .horz-line{
+    background:#20bbd0
+  }
+  .ut19.pcdisplay.darkcyanc .top-overlay{
+    background:#080f10;
+    background:linear-gradient(180deg, rgba(8,15,16,0) 10%, rgba(8,15,16,0.65) 64%, rgba(8,15,16,0.55) 89%, rgba(8,15,16,0.05) 100%);
+    display:block
+  }
+  .ut19.card-tiny.pcdisplay.darkgreenc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/darkgreenc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.tiny.big.darkgreenc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/tiny/darkgreenc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-med.pcdisplay.darkgreenc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/darkgreenc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-regular.pcdisplay.darkgreenc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/darkgreenc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.card-hd.pcdisplay.darkgreenc{
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/hd/darkgreenc.png?v=15");
+    border:none;
+    color:#fff
+  }
+  .ut19.darkgreenc .vert-line,.ut19.darkgreenc .horz-line{
+    background:#fff
+  }
+  .ut19.pcdisplay.darkgreenc .top-overlay{
+    background:#002500;
+    background:linear-gradient(180deg, rgba(0,37,0,0) 10%, rgba(0,37,0,0.65) 64%, rgba(0,37,0,0.55) 89%, rgba(0,37,0,0.05) 100%);
+    display:block
+  }
+  .ut19.pcdisplay.stpatrick .pcdisplay-rat,.ut19.pcdisplay.stpatrick .pcdisplay-pos{
+    color:#ffffff
+  }
+  div[class*=" swap_deals_"] .pcdisplay-rat,div[class*=" swap_deals_"] .pcdisplay-pos,div[class*=" europa_motm"] .pcdisplay-rat,div[class*=" europa_motm"] .pcdisplay-pos{
+    color:#F5F5F5 !important
+  }
+  .ut19.card-hd .vert-line{
+    position:absolute;
+    left:50%;
+    height:18%;
+    width:1px;
+    top:67%
+  }
+  .ut19.card-hd .horz-line{
+    position:absolute;
+    top:64%;
+    width:70%;
+    height:1px;
+    left:14%;
+    z-index:1
+  }
+  .ut19.card-hd .top-one-horz-line{
+    position:absolute;
+    top:30.5%;
+    width:10%;
+    height:1px;
+    left:18%
+  }
+  .ut19.card-hd .top-two-horz-line{
+    position:absolute;
+    top:40.5%;
+    width:10%;
+    height:1px;
+    left:18%
+  }
+  .ut19.card-hd .horz-line-bottom{
+    position:absolute;
+    top:87%;
+    width:10%;
+    height:1px;
+    left:45%
+  }
+  .ut19.card-regular .vert-line{
+    position:absolute;
+    left:47%;
+    height:18%;
+    width:1px;
+    top:64%;
+    opacity:0.8
+  }
+  .ut19.card-regular .horz-line{
+    position:absolute;
+    top:61%;
+    width:70%;
+    height:1px;
+    left:13%;
+    opacity:0.8;
+    z-index:1
+  }
+  .ut19.card-regular .top-one-horz-line{
+    position:absolute;
+    top:30.5%;
+    width:10%;
+    height:1px;
+    left:18%
+  }
+  .ut19.card-regular .top-two-horz-line{
+    position:absolute;
+    top:40%;
+    width:10%;
+    height:1px;
+    left:18%
+  }
+  .ut19.card-regular .horz-line-bottom{
+    position:absolute;
+    top:84%;
+    width:10%;
+    height:1px;
+    left:42%;
+    opacity:0.8
+  }
+  .ut19.card-med .vert-line{
+    position:absolute;
+    left:50%;
+    height:18%;
+    width:1px;
+    top:67%;
+    opacity:0.8
+  }
+  .ut19.card-med .horz-line{
+    position:absolute;
+    top:64%;
+    width:70%;
+    height:1px;
+    left:15%;
+    opacity:0.8;
+    z-index:1
+  }
+  .ut19.card-med .top-one-horz-line{
+    position:absolute;
+    top:30.5%;
+    width:10%;
+    height:1px;
+    left:18%
+  }
+  .ut19.card-med .top-two-horz-line{
+    position:absolute;
+    top:40.5%;
+    width:10%;
+    height:1px;
+    left:18%
+  }
+  .ut19.card-med .horz-line-bottom{
+    position:absolute;
+    top:88%;
+    width:10%;
+    height:1px;
+    left:45%;
+    opacity:0.8
+  }
+  @font-face{
+    font-family:'Champions';
+    src:url("https://www.futbin.com/design/css/fonts/champions/champions.woff") format("woff")
+  }
+  .pcdisplay.ut19 div{
+    font-family:"DINPro-Cond",Arial,sans-serif !important
+  }
+  .ut19.icon div[class*="pcdisplay-card-"]{
+    color:#745f04
+  }
+  .ut19.card-hd.pcdisplay.otw{
+    background-position-x:-4px
+  }
+  .ut19.pcdisplay.otw .pcdisplay-name,.ut19.card-hd.pcdisplay.otw .pcdisplay-pos,.ut19.card-hd.pcdisplay.otw .pcdisplay-rat{
+    color:#ea598d !important
+  }
+  .ut19.pcdisplay.ucl .pcdisplay-name,.ut19.card-hd.pcdisplay.ucl .pcdisplay-pos,.ut19.card-hd.pcdisplay.ucl .pcdisplay-rat{
+    color:#fff !important
+  }
+  .ut19.card-hd.pcdisplay.ucl{
+    font-family:"Champions",Arial,sans-serif !important
+  }
+  .pcdisplay.ut19.price-on .pcdisplay-price{
+    font-family:"Open Sans",Arial, sans-serif !important
+  }
+  .ut19.card-hd.ucl .ovrhover{
+    top:-7px
+  }
+  .ut19.pcdisplay.card-hd{
+    height:455px;
+    width:300px;
+    background-size:100% 100%
+  }
+  .ut19.card-hd .pcdisplay-picture{
+    left:85px;
+    top:62px
+  }
+  .ut19.card-hd .pcdisplay-picture img{
+    width:180px;
+    height:auto
+  }
+  .ut19.card-hd .pcdisplay-club{
+    left:48px;
+    top:192px;
+    z-index:3
+  }
+  .ut19.card-hd .pcdisplay-club img{
+    width:40px
+  }
+  .ut19.card-hd .pcdisplay-country{
+    left:46px;
+    top:148px;
+    z-index:3
+  }
+  .ut19.card-hd .pcdisplay-country img{
+    width:45px
+  }
+  .ut19.card-hd .pcdisplay-rat{
+    font-size:400%;
+    top:13%;
+    left:15%;
+    font-family:"DINPro-Cond-Med",Arial,sans-serif !important;
+    text-align:center;
+    width:20px;
+    line-height:44px;
+    z-index:3
+  }
+  .ut19.card-hd .pcdisplay-pos{
+    font-size:28px;
+    top:24%;
+    width:30px;
+    left:17.4%;
+    text-align:center;
+    font-family:"DINPro-Cond",Arial,sans-serif !important;
+    z-index:3
+  }
+  .ut19.card-hd div[class*="pcdisplay-ovr"]{
+    font-family:"DINPro-Cond-Bold",Arial,sans-serif !important;
+    font-size:30px
+  }
+  .ut19.card-hd .pcdisplay-name{
+    text-align:center;
+    top:250px;
+    width:99%;
+    text-transform:uppercase;
+    letter-spacing:-0.2px;
+    line-height:30px;
+    font-family:"DINPro-Cond-Bold",Arial,sans-serif !important;
+    font-size:38px;
+    z-index:3
+  }
+  .ut19.card-hd div[class*="pcdisplay-card-"]{
+    font-size:28px;
+    font-weight:400
+  }
+  .ut19.card-hd .ovrhover{
+    position:absolute;
+    top:-4px
+  }
+  .ut19.card-hd .pcdisplay-ovr1{
+    left:52px;
+    top:308px
+  }
+  .ut19.card-hd .pcdisplay-card-pace{
+    left:85px;
+    top:308px
+  }
+  .ut19.card-hd .pcdisplay-chem-style-pace{
+    font-size:11px;
+    left:18px;
+    top:169px;
+    font-weight:bold;
+    font-family:'Lato', sans-serif
+  }
+  .ut19.card-hd .pcdisplay-ovr2{
+    left:52px;
+    top:340px
+  }
+  .ut19.card-hd .pcdisplay-card-shoo{
+    left:85px;
+    top:340px
+  }
+  .ut19.card-hd .pcdisplay-chem-style-shoo{
+    font-size:11px;
+    left:18px;
+    top:190px;
+    font-weight:bold;
+    font-family:'Lato', sans-serif
+  }
+  .ut19.card-hd .pcdisplay-ovr3{
+    left:52px;
+    top:372px
+  }
+  .ut19.card-hd .pcdisplay-card-pas{
+    left:85px;
+    top:372px
+  }
+  .ut19.card-hd .pcdisplay-chem-style-pas{
+    font-size:11px;
+    left:18px;
+    top:212px;
+    font-weight:bold;
+    font-family:'Lato', sans-serif
+  }
+  .ut19.card-hd .pcdisplay-ovr4{
+    left:179px;
+    top:308px
+  }
+  .ut19.card-hd .pcdisplay-card-dri{
+    left:211px;
+    top:308px
+  }
+  .ut19.card-hd .pcdisplay-chem-style-dri{
+    font-size:11px;
+    left:161px;
+    top:169px;
+    font-weight:bold;
+    font-family:'Lato', sans-serif
+  }
+  .ut19.card-hd .pcdisplay-ovr5{
+    left:179px;
+    top:340px
+  }
+  .ut19.card-hd .pcdisplay-card-def{
+    left:211px;
+    top:340px
+  }
+  .ut19.card-hd .pcdisplay-chem-style-def{
+    font-size:11px;
+    left:161px;
+    top:188px;
+    font-weight:bold;
+    font-family:'Lato', sans-serif
+  }
+  .ut19.card-hd .pcdisplay-ovr6{
+    left:179px;
+    top:372px
+  }
+  .ut19.card-hd .pcdisplay-card-phy{
+    left:211px;
+    top:372px
+  }
+  .ut19.card-hd .pcdisplay-chem-style-phy{
+    font-size:11px;
+    left:161px;
+    top:212px;
+    font-weight:bold;
+    font-family:'Lato', sans-serif
+  }
+  .ut19.card-hd .pcdisplay-ovr7{
+    font-size:12px;
+    top:242px;
+    margin:auto;
+    width:190px;
+    text-align:Center
+  }
+  .ut19.pcdisplay.if.gold .pcdisplay-name,.ut19.card-hd.pcdisplay.if.gold .pcdisplay-pos,.ut19.card-hd.pcdisplay.if.gold .pcdisplay-rat{
+    color:#fce398 !important
+  }
+  .ut19.pcdisplay.if.gold .pcdisplay-name,.ut19.card-med.pcdisplay.if.gold .pcdisplay-pos,.ut19.card-med.pcdisplay.if.gold .pcdisplay-rat{
+    color:#fce398 !important
+  }
+  .ut19.pcdisplay.if.silver .pcdisplay-name,.ut19.card-hd.pcdisplay.if.silver .pcdisplay-pos,.ut19.card-hd.pcdisplay.if.silver .pcdisplay-rat{
+    color:#b0bcc8 !important
+  }
+  .ut19.pcdisplay.if.silver .pcdisplay-name,.ut19.card-med.pcdisplay.if.silver .pcdisplay-pos,.ut19.card-med.pcdisplay.if.silver .pcdisplay-rat{
+    color:#b0bcc8 !important
+  }
+  .ut19.pcdisplay.if.bronze .pcdisplay-name,.ut19.card-hd.pcdisplay.if.bronze .pcdisplay-pos,.ut19.card-hd.pcdisplay.if.bronze .pcdisplay-rat{
+    color:#e2a487 !important
+  }
+  .ut19.if.gold div[class*="pcdisplay-card-"],.ut19.if.silver div[class*="pcdisplay-card-"],.ut19.if.bronze div[class*="pcdisplay-card-"]{
+    opacity:0.7
+  }
+  .ut19.award-winner div[class*="pcdisplay-card-"]{
+    opacity:0.7
+  }
+  .ut19.pcdisplay.award-winner2 .pcdisplay-name,.ut19.card-hd.pcdisplay.award-winner2 .pcdisplay-pos,.ut19.card-hd.pcdisplay.award-winner2 .pcdisplay-rat{
+    color:#f7e584 !important
+  }
+  .ut19.pcdisplay.award-winner2 .pcdisplay-country,.ut19.pcdisplay.award-winner2 .pcdisplay-rat{
+    left:52px !important
+  }
+  .ut19.pcdisplay.award-winner2 .pcdisplay-club{
+    left:55px !important
+  }
+  .ut19.pcdisplay.award-winner2 .pcdisplay-pos{
+    left:57px !important
+  }
+  .ut19.card-hd.pcdisplay.toty .pcdisplay-name,.ut19.card-hd.pcdisplay.card-hd.toty .pcdisplay-pos,.ut19.card-hd.pcdisplay.toty .pcdisplay-rat{
+    color:#e1c775 !important
+  }
+  .ut19.card-hd.pcdisplay.toty .pcdisplay-country,.ut19.card-hd.pcdisplay.toty .pcdisplay-rat{
+    left:52px !important
+  }
+  .ut19.card-hd.pcdisplay.toty .pcdisplay-club{
+    left:55px !important
+  }
+  .ut19.card-hd.pcdisplay.toty .pcdisplay-pos{
+    left:57px !important
+  }
+  .ut19.card-hd.pcdisplay.toty .pcdisplay-chemistry-style{
+    left:-1px !important
+  }
+  .ut19.pcdisplay.tots.gold .pcdisplay-name,.ut19.card-hd.pcdisplay.tots.gold .pcdisplay-pos,.ut19.card-hd.pcdisplay.tots.gold .pcdisplay-rat{
+    color:#f1de7e !important
+  }
+  .ut19.card-hd.pcdisplay.tots.gold .pcdisplay-country,.ut19.card-hd.pcdisplay.tots.gold .pcdisplay-rat{
+    left:50px !important
+  }
+  .ut19.card-hd.pcdisplay.tots.gold .pcdisplay-club{
+    left:55px !important
+  }
+  .ut19.card-hd.pcdisplay.tots.gold .pcdisplay-pos{
+    left:57px !important
+  }
+  .ut19.card-hd.pcdisplay.tots.gold .pcdisplay-chemistry-style{
+    left:-1px !important
+  }
+  .ut19.card-hd.pcdisplay.uel{
+    border:none;
+    color:#fff;
+    font-family:"Champions",Arial,sans-serif !important;
+    background-position:-8px 0
+  }
+  .ut19.card-hd.pcdisplay.uel .pcdisplay-chemistry-style{
+    bottom:29px !important;
+    right:6px !important
+  }
+  .ut19.pcdisplay.uel .pcdisplay-name,.ut19.card-hd.pcdisplay.uel .pcdisplay-pos,.ut19.card-hd.pcdisplay.uel .pcdisplay-rat{
+    color:#fff !important
+  }
+  .ut19.pcdisplay.ucl_live,.ut19.pcdisplay.ucl_motm,.ut19.pcdisplay.ucl_non_rare,.ut19.pcdisplay.ucl_rare,.ut19.pcdisplay.ucl_sbc,.ut19.pcdisplay.ucl_tott{
+    font-family:"Champions",Arial,sans-serif !important
+  }
+  .ut19.pcdisplay.ucl_live .pcdisplay-name,.ut19.pcdisplay.ucl_live .pcdisplay-pos,.ut19.pcdisplay.ucl_live .pcdisplay-rat,.ut19.pcdisplay.ucl_motm .pcdisplay-name,.ut19.pcdisplay.ucl_motm .pcdisplay-pos,.ut19.pcdisplay.ucl_motm .pcdisplay-rat,.ut19.pcdisplay.ucl_non_rare .pcdisplay-name,.ut19.pcdisplay.ucl_non_rare .pcdisplay-pos,.ut19.pcdisplay.ucl_non_rare .pcdisplay-rat,.ut19.pcdisplay.ucl_rare .pcdisplay-name,.ut19.pcdisplay.ucl_rare .pcdisplay-pos,.ut19.pcdisplay.ucl_rare .pcdisplay-rat,.ut19.pcdisplay.ucl_sbc .pcdisplay-name,.ut19.pcdisplay.ucl_sbc .pcdisplay-pos,.ut19.pcdisplay.ucl_sbc .pcdisplay-rat,.ut19.pcdisplay.ucl_tott .ppurple_award_winnercdisplay-name,.ut19.pcdisplay.ucl_tott .pcdisplay-pos,.ut19.pcdisplay.ucl_tott .pcdisplay-rat{
+    font-family:"Champions",Arial,sans-serif !important
+  }
+  .ut19.pcdisplay.ucl_live div[class*="pcdisplay-ovr"],.ut19.pcdisplay.ucl_motm div[class*="pcdisplay-ovr"],.ut19.pcdisplay.ucl_non_rare div[class*="pcdisplay-ovr"],.ut19.pcdisplay.ucl_rare div[class*="pcdisplay-ovr"],.ut19.pcdisplay.ucl_sbc div[class*="pcdisplay-ovr"],.ut19.pcdisplay.ucl_tott div[class*="pcdisplay-ovr"]{
+    font-family:"Champions",Arial,sans-serif !important;
+    margin-left:-5px
+  }
+  .ut19.ucl_live div[class*="pcdisplay-card-"],.ut19.pcdisplay.ucl_motm div[class*="pcdisplay-card-"],.ut19.pcdisplay.ucl_non_rare div[class*="pcdisplay-card-"],.ut19.pcdisplay.ucl_rare div[class*="pcdisplay-card-"],.ut19.pcdisplay.ucl_sbc div[class*="pcdisplay-card-"],.ut19.pcdisplay.ucl_tott div[class*="pcdisplay-card-"]{
+    font-family:"Champions",Arial,sans-serif !important
+  }
+  .ut19.pcdisplay.ucl_live div[class*="pcdisplay-over"],.ut19.pcdisplay.ucl_motm div[class*="pcdisplay-over"],.ut19.pcdisplay.ucl_non_rare div[class*="pcdisplay-over"],.ut19.pcdisplay.ucl_rare div[class*="pcdisplay-over"],.ut19.pcdisplay.ucl_sbc div[class*="pcdisplay-over"],.ut19.pcdisplay.ucl_tott div[class*="pcdisplay-over"]{
+    font-family:"Champions",Arial,sans-serif !important
+  }
+  .ut19.ucl .pcdisplay-over{
+    font-family:"Champions",Arial,sans-serif !important;
+    font-size:13px !important
+  }
+  .ut19.ucl.card-med .pcdisplay-wr{
+    font-size:12px
+  }
+  .ut19.card-hd.ucl .ovrhover{
+    top:-7px
+  }
+  .ut19.pcdisplay{
+    background-repeat:no-repeat;
+    color:#fff;
+    position:relative
+  }
+  .ut19.pcdisplay.card-tiny{
+    cursor:pointer;
+    height:110px;
+    width:90px;
+    font-weight:bold
+  }
+  .ut19.pcdisplay.card-med{
+    cursor:pointer;
+    height:205px;
+    width:135px;
+    font-weight:600;
+    background-size:135px 205px
+  }
+  .ut19.pcdisplay.card-regular{
+    height:300px;
+    width:200px
+  }
+  .ovrhover{
+    z-index:1
+  }
+  .ut19.card-med.pcdisplay.icon.world-cup-mode .pcdisplay-rat,.ut19.card-med.pcdisplay.icon.world-cup-mode .pcdisplay-pos,.ut19.card-med.pcdisplay.icon.world-cup-mode .pcdisplay-skills-left,.ut19.card-med.pcdisplay.icon.world-cup-mode .pcdisplay-wf-left,.ut19.card-med.pcdisplay.icon.world-cup-mode .pcdisplay-wr-left,.ut19.card-regular.pcdisplay.icon.world-cup-mode .pcdisplay-rat,.ut19.card-regular.pcdisplay.icon.world-cup-mode .pcdisplay-pos,.ut19.card-regular.pcdisplay.icon.world-cup-mode .pcdisplay-skills-left,.ut19.card-regular.pcdisplay.icon.world-cup-mode .pcdisplay-wf-left,.ut19.card-regular.pcdisplay.icon.world-cup-mode .pcdisplay-wr-left{
+    color:#cbc5a5 !important
+  }
+  .ut19.card-regular.pcdisplay.icon.world-cup-mode .pcdisplay-club{
+    top:123px;
+    left:12px
+  }
+  .ut19.card-regular.pcdisplay.icon.world-cup-mode .pcdisplay-country{
+    top:88px
+  }
+  .ut19.card-med.pcdisplay.icon.world-cup-mode .pcdisplay-club{
+    top:83px;
+    left:9px
+  }
+  .ut19.card-med.pcdisplay.icon.world-cup-mode .pcdisplay-country{
+    top:62px
+  }
+  .ut19.card-regular.pcdisplay.icon.world-cup-mode .pcdisplay-name,.ut19.card-med.pcdisplay.icon.world-cup-mode .pcdisplay-name,.ut19.card-tiny.pcdisplay.icon.world-cup-mode .pcdisplay-name{
+    font-family:Dusha,Arial,sans-serif !important
+  }
+  .ut19.card-regular .pcdisplay-chem-style-name{
+    font-size:14px;
+    line-height:44px;
+    top:219px;
+    left:32px;
+    font-weight:700;
+    font-family:Lato,sans-serif;
+    width:180px;
+    text-align:center
+  }
+  .ut19.card-regular .pcdisplay-chem-style-name img{
+    display:none
+  }
+  .ut19.card-regular .pcdisplay-rat{
+    font-size:40px;
+    left:23px;
+    font-family:"DINPro-Cond-Med",Arial,sans-serif !important;
+    text-align:center;
+    width:45px;
+    top:30px;
+    line-height:44px;
+    z-index:1
+  }
+  .ut19.card-regular .pcdisplay-name{
+    left:10px;
+    text-align:center;
+    top:154px;
+    width:170px;
+    text-transform:uppercase;
+    letter-spacing:-0.2px;
+    line-height:26px;
+    font-family:"DINPro-Cond-Bold",Arial,sans-serif !important;
+    font-size:22px;
+    z-index:1
+  }
+  .ut19.card-regular.pcdisplay.wcmode_blue .pcdisplay-name{
+    font-family:Dusha,Arial,sans-serif !important;
+    font-weight:100 !important;
+    top:137px
+  }
+  .ut19.card-regular .pcdisplay-pos{
+    font-size:18px;
+    top:70px;
+    width:30px;
+    left:30px;
+    text-align:center;
+    font-weight:700;
+    font-family:"DINPro-Cond",Arial,sans-serif !important;
+    z-index:1
+  }
+  .ut19.card-regular .pcdisplay-country{
+    left:26px;
+    top:95px;
+    width:37px;
+    text-align:center;
+    z-index:1
+  }
+  .ut19.card-regular .pcdisplay-country img{
+    max-width:30px
+  }
+  .ut19.card-regular.world-cup-mode .pcdisplay-country{
+    left:10px;
+    top:114px !important;
+    width:37px;
+    text-align:center
+  }
+  .ut19.card-regular.world-cup-mode .pcdisplay-country img{
+    max-width:29px
+  }
+  .ut19.card-regular .pcdisplay-picture{
+    height:auto;
+    left:57px;
+    top:42px;
+    width:112px
+  }
+  .ut19.card-regular .pcdisplay-picture img{
+    width:112px
+  }
+  .ut19.card-regular .pcdisplay-picture.special-img{
+    height:auto;
+    left:16px;
+    top:42px
+  }
+  .ut19.card-regular .pcdisplay-picture.special-img img{
+    width:160px
+  }
+  .ut19.card-regular.wcmode_blue .pcdisplay-picture{
+    height:115px;
+    left:58px;
+    top:23px;
+    width:112px
+  }
+  .ut19.card-regular .base-stats,.ut19.card-regular .ovrhover{
+    left:-28px;
+    top:18px
+  }
+  .ut19.card-regular .pcdisplay-club{
+    left:32px;
+    position:absolute;
+    top:124px;
+    z-index:1
+  }
+  .ut19.card-regular .pcdisplay-club img{
+    width:26px
+  }
+  .ut19.card-regular.world-cup-mode .pcdisplay-club{
+    left:15px !important;
+    position:absolute;
+    top:85px !important
+  }
+  .ut19.card-regular.world-cup-mode .pcdisplay-club img{
+    width:26px !important
+  }
+  .ut19.card-regular.icon.world-cup-mode .pcdisplay-club{
+    left:15px !important;
+    position:absolute;
+    top:115px !important
+  }
+  .ut19.card-regular.icon.world-cup-mode .pcdisplay-country{
+    left:10px;
+    top:85px !important;
+    width:37px;
+    text-align:center
+  }
+  .ut19.card-med .pcdisplay-wr{
+    top:14px;
+    left:46px;
+    font-size:11px;
+    font-weight:bold;
+    padding-left:4px;
+    padding-right:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px
+  }
+  .ut19.card-regular>.ovrhover>.main-stat-diff{
+    width:20px;
+    text-align:center
+  }
+  .ut19.card-regular>.ovrhover>.main-stat-diff-1{
+    left:39px;
+    top:170px
+  }
+  .ut19.card-regular>.ovrhover>.main-stat-diff-2{
+    left:39px;
+    top:191px
+  }
+  .ut19.card-regular>.ovrhover>.main-stat-diff-3{
+    left:39px;
+    top:213px
+  }
+  .ut19.card-regular>.ovrhover>.main-stat-diff-4{
+    left:180px;
+    top:169px
+  }
+  .ut19.card-regular>.ovrhover>.main-stat-diff-5{
+    left:180px;
+    top:190px
+  }
+  .ut19.card-regular>.ovrhover>.main-stat-diff-6{
+    left:180px;
+    top:212px
+  }
+  .ut19.card-regular .main-stat-diff{
+    font-size:16px;
+    font-weight:100;
+    width:15px;
+    text-align:center
+  }
+  .ut19.card-regular .pcdisplay-ovr1{
+    font-size:18px;
+    font-family:"DINPro-Cond-Bold",Arial,sans-serif !important;
+    left:62px;
+    top:168px
+  }
+  .ut19.card-regular .pcdisplay-card-pace{
+    font-size:16px;
+    left:82px;
+    top:169px;
+    font-weight:400
+  }
+  .ut19.card-regular .pcdisplay-chem-style-pace{
+    font-size:11px;
+    left:18px;
+    top:169px;
+    font-weight:bold;
+    font-family:'Lato', sans-serif
+  }
+  .ut19.card-regular .pcdisplay-ovr2{
+    font-size:18px;
+    font-family:"DINPro-Cond-Bold",Arial,sans-serif !important;
+    left:62px;
+    top:188px
+  }
+  .ut19.card-regular .pcdisplay-card-shoo{
+    font-size:16px;
+    left:82px;
+    top:190px;
+    font-weight:400
+  }
+  .ut19.card-regular .pcdisplay-chem-style-shoo{
+    font-size:11px;
+    left:18px;
+    top:190px;
+    font-weight:bold;
+    font-family:'Lato', sans-serif
+  }
+  .ut19.card-regular .pcdisplay-ovr3{
+    font-size:18px;
+    font-family:"DINPro-Cond-Bold",Arial,sans-serif !important;
+    left:62px;
+    top:209px
+  }
+  .ut19.card-regular .pcdisplay-card-pas{
+    font-size:18px;
+    left:82px;
+    top:210px;
+    font-weight:400
+  }
+  .ut19.card-regular .pcdisplay-chem-style-pas{
+    font-size:11px;
+    left:18px;
+    top:212px;
+    font-weight:bold;
+    font-family:'Lato', sans-serif
+  }
+  .ut19.card-regular .pcdisplay-ovr4{
+    font-size:18px;
+    font-family:"DINPro-Cond-Bold",Arial,sans-serif !important;
+    left:139px;
+    top:168px
+  }
+  .ut19.card-regular .pcdisplay-card-dri{
+    font-size:18px;
+    left:161px;
+    top:169px;
+    font-weight:400
+  }
+  .ut19.card-regular .pcdisplay-chem-style-dri{
+    font-size:11px;
+    left:161px;
+    top:169px;
+    font-weight:bold;
+    font-family:'Lato', sans-serif
+  }
+  .ut19.card-regular .pcdisplay-ovr5{
+    font-size:18px;
+    font-family:"DINPro-Cond-Bold",Arial,sans-serif !important;
+    left:139px;
+    top:188px
+  }
+  .ut19.card-regular .pcdisplay-card-def{
+    font-size:18px;
+    left:161px;
+    top:190px;
+    font-weight:400
+  }
+  .ut19.card-regular .pcdisplay-chem-style-def{
+    font-size:11px;
+    left:161px;
+    top:188px;
+    font-weight:bold;
+    font-family:'Lato', sans-serif
+  }
+  .ut19.card-regular .pcdisplay-ovr6{
+    font-size:18px;
+    font-family:"DINPro-Cond-Bold",Arial,sans-serif !important;
+    left:139px;
+    top:209px
+  }
+  .ut19.card-regular .pcdisplay-card-phy{
+    font-size:18px;
+    left:161px;
+    top:210px;
+    font-weight:400
+  }
+  .ut19.card-regular .pcdisplay-chem-style-phy{
+    font-size:11px;
+    left:161px;
+    top:212px;
+    font-weight:bold;
+    font-family:'Lato', sans-serif
+  }
+  .ut19.card-regular .pcdisplay-ovr7{
+    font-size:12px;
+    top:242px;
+    margin:auto;
+    width:190px;
+    text-align:Center
+  }
+  .ut19.card-med.pcdisplay .main-stat-diff{
+    font-size:10px;
+    font-weight:700;
+    width:15px;
+    text-align:center
+  }
+  .ut19.card-med .main-stat-diff-1{
+    left:2px;
+    top:132px
+  }
+  .ut19.card-med .main-stat-diff-2{
+    left:2px;
+    top:147px
+  }
+  .ut19.card-med .main-stat-diff-3{
+    left:2px;
+    top:162px
+  }
+  .ut19.card-med .main-stat-diff-4{
+    left:104px;
+    top:132px
+  }
+  .ut19.card-med .main-stat-diff-5{
+    left:104px;
+    top:147px
+  }
+  .ut19.card-med .main-stat-diff-6{
+    left:104px;
+    top:162px
+  }
+  .ut19.card-med .pcdisplay-chem{
+    color:#FFFFFF;
+    font-size:12px;
+    left:58px;
+    top:108px;
+    width:65px
+  }
+  .ut19.card-med .pcdisplay-workrates{
+    color:#FFFFFF;
+    font-size:12px;
+    left:26px;
+    top:108px
+  }
+  .ut19.card-med .pcdisplay-picture{
+    left:44px;
+    top:31px
+  }
+  .ut19.card-med .pcdisplay-picture img{
+    width:80px
+  }
+  .ut19.card-med .pcdisplay-picture.special-img{
+    left:15px;
+    top:29px;
+    z-index:0
+  }
+  .ut19.card-med .pcdisplay-picture.special-img img{
+    width:110px
+  }
+  .ut19.card-med .card-phy{
+    font-size:12px;
+    left:88px;
+    top:150px
+  }
+  .ut19.card-med .pcdisplay-ovr7{
+    font-size:12px;
+    left:16px;
+    top:20px
+  }
+  .ut19.card-tiny .pcdisplay-rat{
+    font-size:16px;
+    left:5px;
+    line-height:44px;
+    top:7px;
+    width:30px;
+    text-align:center;
+    font-family:DINPro-Cond-Med,Arial,sans-serif !important
+  }
+  .ut19.card-tiny .pcdisplay-name{
+    font-size:14px;
+    left:1px;
+    text-align:center;
+    top:77px;
+    width:82px;
+    font-weight:400;
+    font-family:DINPro-Cond-Med,Arial,sans-serif !important;
+    z-index:3
+  }
+  .ut19.card-tiny.pcdisplay.wcmode_blue .pcdisplay-name{
+    font-family:Dusha,Arial,sans-serif !important;
+    font-weight:100 !important
+  }
+  .ut19.card-tiny .pcdisplay-position{
+    font-size:11px;
+    font-weight:100;
+    left:5px;
+    top:31px;
+    width:30px;
+    text-align:center;
+    font-family:DINPro-Cond-Med,Arial,sans-serif !important;
+    z-index:3
+  }
+  .ut19.card-tiny .pcdisplay-country{
+    left:13px;
+    top:58px;
+    z-index:3
+  }
+  .ut19.card-tiny .pcdisplay-country img{
+    max-width:15px
+  }
+  .ut19.card-tiny .pcdisplay-picture.special-img{
+    left:7px;
+    top:23px;
+    width:70px;
+    z-index:1
+  }
+  .ut19.card-tiny .pcdisplay-picture.special-img img{
+    width:70px
+  }
+  .ut19.card-tiny .pcdisplay-picture{
+    left:28px;
+    top:29px;
+    width:50px
+  }
+  .ut19.card-tiny .pcdisplay-picture img{
+    width:50px
+  }
+  .ut19.card-tiny .pcdisplay-club{
+    left:13px;
+    position:absolute;
+    top:42px;
+    z-index:3
+  }
+  .ut19.card-tiny .pcdisplay-club img{
+    width:15px
+  }
+  .ut19.card-med .pcdisplay-rat{
+    font-size:22px;
+    left:16px;
+    top:32px;
+    width:30px;
+    text-align:center;
+    font-family:DINPro-Cond-Med,Arial,sans-serif !important;
+    font-weight:400
+  }
+  .ut19.card-med .pcdisplay-name{
+    font-size:18px;
+    left:0;
+    line-height:16px;
+    top:113px;
+    width:100%;
+    text-transform:uppercase;
+    font-weight:400;
+    text-align:center;
+    white-space:nowrap;
+    overflow:hidden !important;
+    text-overflow:ellipsis;
+    font-family:DINPro-Cond-Med, Arial, sans-serif !important;
+    z-index:2
+  }
+  .ut19.card-med.pcdisplay.wcmode_blue .pcdisplay-name{
+    font-family:Dusha,Arial,sans-serif !important;
+    font-weight:100 !important
+  }
+  .ut19.card-med .pcdisplay-pos{
+    font-size:12px;
+    left:16px;
+    top:47px;
+    width:30px;
+    font-family:DINPro-Cond-Med,Arial,sans-serif !important;
+    text-align:center;
+    z-index:2
+  }
+  .ut19.card-med .pcdisplay-chem{
+    color:#FFFFFF;
+    font-size:12px;
+    left:58px;
+    top:108px;
+    width:65px
+  }
+  .ut19.card-med .pcdisplay-workrates{
+    color:#FFFFFF;
+    font-size:12px;
+    left:26px;
+    top:108px
+  }
+  .ut19.card-med .pcdisplay-country{
+    left:21px;
+    top:63px;
+    z-index:2
+  }
+  .ut19.card-med .pcdisplay-country img{
+    max-width:20px
+  }
+  .ut19.card-med .pcdisplay-club{
+    left:22px;
+    top:85px;
+    z-index:2
+  }
+  .ut19.card-med .pcdisplay-club img{
+    width:19px
+  }
+  .ut19.card-med .base-stats{
+    left:3px;
+    z-index:2
+  }
+  .ut19.card-med .pcdisplay-ovr1{
+    font-size:16px;
+    left:16px;
+    top:132px;
+    z-index:2
+  }
+  .ut19.card-med .card-pace{
+    font-size:14px;
+    left:32px;
+    top:132px;
+    font-weight:400;
+    z-index:2
+  }
+  .ut19.card-med .pcdisplay-ovr2{
+    font-size:16px;
+    left:16px;
+    top:147px;
+    z-index:2
+  }
+  .ut19.card-med .card-sho{
+    font-size:14px;
+    left:32px;
+    top:147px;
+    font-weight:400;
+    z-index:2
+  }
+  .ut19.card-med .pcdisplay-ovr3{
+    font-size:16px;
+    left:16px;
+    top:162px
+  }
+  .ut19.card-med .card-pas{
+    font-size:14px;
+    left:32px;
+    top:163px;
+    font-weight:400
+  }
+  .ut19.card-med .pcdisplay-ovr4{
+    font-size:16px;
+    left:74px;
+    top:132px
+  }
+  .ut19.card-med .card-dri{
+    font-size:14px;
+    left:88px;
+    top:132px;
+    font-weight:400
+  }
+  .ut19.card-med .pcdisplay-ovr5{
+    font-size:16px;
+    left:74px;
+    top:147px
+  }
+  .ut19.card-med .card-def{
+    font-size:14px;
+    left:88px;
+    top:147px;
+    font-weight:400
+  }
+  .ut19.card-med .pcdisplay-ovr6{
+    font-size:16px;
+    left:74px;
+    top:162px
+  }
+  .ut19.card-med .card-phy{
+    font-size:14px;
+    left:88px;
+    top:162px;
+    font-weight:400
+  }
+  .ut19.card-med .pcdisplay-ovr7{
+    font-size:12px;
+    left:16px;
+    top:20px
+  }
+  .ut19.card-med .pcdisplay-rat-diff{
+    font-size:19px;
+    left:12px;
+    line-height:24px;
+    top:26px;
+    font-family:DINPro-Cond-Bold,Arial,sans-serif !important
+  }
+  .ut19.card-med .pcdisplay-name-diff{
+    font-size:14px;
+    left:31px;
+    line-height:16px;
+    top:97px;
+    width:95px;
+    text-transform:uppercase;
+    font-weight:700;
+    text-align:center;
+    white-space:nowrap;
+    overflow:hidden !important;
+    text-overflow:ellipsis
+  }
+  .ut19.card-med .pcdisplay-pos-diff{
+    font-size:12px;
+    left:4px;
+    top:43px;
+    width:30px;
+    font-family:DINPro-Cond-Bold,Arial,sans-serif !important;
+    text-align:center
+  }
+  .ut19.card-med .pcdisplay-chem-diff{
+    color:#FFFFFF;
+    font-size:12px;
+    left:58px;
+    top:108px;
+    width:65px
+  }
+  .ut19.card-med .pcdisplay-workrates-diff{
+    color:#FFFFFF;
+    font-size:12px;
+    left:26px;
+    top:108px
+  }
+  .ut19.card-med .pcdisplay-country-diff{
+    left:7px;
+    top:85px
+  }
+  .ut19.card-med .pcdisplay-country-diff img{
+    max-width:22px
+  }
+  .ut19.card-med .pcdisplay-picture-diff{
+    left:55px;
+    top:22px
+  }
+  .ut19.card-med .pcdisplay-picture-diff img{
+    height:74px;
+    width:74px
+  }
+  .ut19.card-med .pcdisplay-club-diff{
+    left:6px;
+    top:62px
+  }
+  .ut19.card-med .pcdisplay-club-diff img{
+    width:24px
+  }
+  .ut19.card-med .ovrhover{
+    left:8px
+  }
+  .ut19.card-med .base-stats{
+    left:8px
+  }
+  .ut19.card-med .pcdisplay-ovr1-diff{
+    font-size:16px;
+    left:37px;
+    top:117px;
+    font-family:DINPro-Cond-Bold,Arial,sans-serif !important
+  }
+  .ut19.card-med .card-pace-diff{
+    font-size:12px;
+    left:52px;
+    top:118px;
+    font-weight:400
+  }
+  .ut19.card-med .pcdisplay-ovr2-diff{
+    font-size:16px;
+    left:37px;
+    top:132px;
+    font-family:DINPro-Cond-Bold,Arial,sans-serif !important
+  }
+  .ut19.card-med .card-sho-diff{
+    font-size:12px;
+    left:52px;
+    top:133px;
+    font-weight:400
+  }
+  .ut19.card-med .pcdisplay-ovr3-diff{
+    font-size:16px;
+    left:37px;
+    top:147px;
+    font-family:DINPro-Cond-Bold,Arial,sans-serif !important
+  }
+  .ut19.card-med .card-pas-diff{
+    font-size:13px;
+    left:52px;
+    top:148px;
+    font-weight:400
+  }
+  .ut19.card-med .pcdisplay-ovr4-diff{
+    font-size:16px;
+    left:76px;
+    top:117px;
+    font-family:DINPro-Cond-Bold,Arial,sans-serif !important
+  }
+  .ut19.card-med .card-dri-diff{
+    font-size:13px;
+    left:92px;
+    top:118px;
+    font-weight:400
+  }
+  .ut19.card-med .pcdisplay-ovr5-diff{
+    font-size:16px;
+    left:76px;
+    top:132px;
+    font-family:DINPro-Cond-Bold,Arial,sans-serif !important
+  }
+  .ut19.card-med .card-def-diff{
+    font-size:13px;
+    left:92px;
+    top:133px;
+    font-weight:400
+  }
+  .ut19.card-med .pcdisplay-ovr6-diff{
+    font-size:16px;
+    left:76px;
+    top:147px;
+    font-family:DINPro-Cond-Bold,Arial,sans-serif !important
+  }
+  .ut19.card-med .card-phy-diff{
+    font-size:13px;
+    left:92px;
+    top:148px;
+    font-weight:400
+  }
+  .ut19.card-med .pcdisplay-ovr7-diff{
+    font-size:12px;
+    left:16px;
+    top:20px
+  }
+  .ut19.card-med .pcdisplay-ovr1,.ut19.card-med .pcdisplay-ovr1-diff,.ut19.card-med .pcdisplay-ovr2,.ut19.card-med .pcdisplay-ovr2-diff,.ut19.card-med .pcdisplay-ovr3,.ut19.card-med .pcdisplay-ovr3-diff,.ut19.card-med .pcdisplay-ovr4,.ut19.card-med .pcdisplay-ovr4-diff,.ut19.card-med .pcdisplay-ovr5,.ut19.card-med .pcdisplay-ovr5-diff,.ut19.card-med .pcdisplay-ovr6,.ut19.card-med .pcdisplay-ovr6-diff,.ut19.card-med .pcdisplay-pos,.ut19.card-med .pcdisplay-pos-diff{
+    font-family:DINPro-Cond-Med,Arial,sans-serif !important;
+    font-weight:400
+  }
+  .managercard18{
+    color:#fff;
+    font-family:"Open Sans",Arial,sans-serif;
+    position:relative
+  }
+  .managercard18 div{
+    line-height:18px;
+    position:absolute;
+    top:60px;
+    left:14px
+  }
+  .ut19.managercard18{
+    background-repeat:no-repeat;
+    color:#fff;
+    font-family:"Open Sans",Arial,sans-serif;
+    position:relative
+  }
+  .ut19.managercard18.card-tiny{
+    cursor:pointer;
+    height:110px;
+    width:90px;
+    font-weight:bold
+  }
+  .ut19.managercard18.card-med{
+    cursor:pointer;
+    height:200px;
+    width:135px
+  }
+  .ut19.card-med.managercard18.Gold{
+    color:#000;
+    background:no-repeat url("https://www.futbin.com/content/fifa19/img/cards/med/goldnrnif.png") 25% 1px
+  }
+  .ut19.card-med.managercard18.Gold.Rare{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/med/goldrnif.png")
+  }
+  .ut19.card-med.managercard18.Bronze{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/med/bronzenrnif.png")
+  }
+  .ut19.card-med.managercard18.Bronze.Rare{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/med/bronzernif.png")
+  }
+  .ut19.card-med.managercard18.Silver{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/med/silvernrnif.png")
+  }
+  .ut19.card-med.managercard18.Silver.Rare{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/med/silverrnif.png")
+  }
+  #manager-card-added{
+    background-repeat:no-repeat;
+    background-size:90px 120px;
+    position:absolute;
+    height:120px;
+    width:90px;
+    cursor:default;
+    margin-left:2%
+  }
+  .ut19.managercard18-added.card-small{
+    cursor:pointer;
+    height:80px;
+    width:100px
+  }
+  .ut19.card-small .manager-added-picture img{
+    position:relative;
+    width:60px;
+    left:28px;
+    top:-24px
+  }
+  .ut19.card-small .manager-pic-added-country img{
+    position:relative;
+    top:25px;
+    width:30px;
+    left:10px
+  }
+  .ut19.card-small .manager-added-picture-league img{
+    position:relative;
+    width:35px;
+    top:26px;
+    left:6px
+  }
+  .ut19.card-small .manager-added-name{
+    position:relative;
+    top:-24px;
+    text-align:center;
+    font-size:12px;
+    font-weight:bold
+  }
+  .ut19.card-small.managercard18-added.Gold{
+    color:#000;
+    background:no-repeat url("https://www.futbin.com/content/fifa19/img/managers18/card/tiny-nonrare-gold.png") 25% 1px
+  }
+  .ut19.card-small.managercard18-added.Gold.Rare{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/managers18/card/tiny-rare-gold.png")
+  }
+  .ut19.card-small.managercard18-added.Bronze{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/managers18/card/tiny-nonrare-bronze.png")
+  }
+  .ut19.card-small.managercard18-added.Bronze.Rare{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/managers18/card/tiny-rare-bronze.png")
+  }
+  .ut19.card-small.managercard18-added.Silver{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/managers18/card/tiny-nonrare-silver.png")
+  }
+  .ut19.card-small.managercard18-added.Silver.Rare{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/managers18/card/tiny-rare-silver.png")
+  }
+  .ut19.card-med .managercard18-rat{
+    font-size:19px;
+    left:25px;
+    line-height:24px;
+    top:20px;
+    font-weight:bold
+  }
+  .ut19.card-med .managercard18-name{
+    font-size:13px;
+    left:0;
+    line-height:16px;
+    text-align:center;
+    top:100px;
+    width:100%;
+    font-weight:bold
+  }
+  .ut19.card-med .managercard18-League{
+    font-size:13px;
+    left:0px;
+    line-height:16px;
+    text-align:center;
+    top:122px;
+    width:100%;
+    font-weight:bold
+  }
+  .ut19.card-med .managercard18-contracts{
+    color:#000;
+    font-size:13px;
+    left:25px;
+    top:142px
+  }
+  .ut19.card-med .managercard18-country-name{
+    font-size:13px;
+    left:0px;
+    line-height:16px;
+    text-align:center;
+    top:167px;
+    width:100%;
+    font-weight:bold
+  }
+  .ut19.card-med .managercard18-talks{
+    left:22px;
+    top:80px
+  }
+  .ut19.card-med .managercard18-country img{
+    max-width:80%
+  }
+  .ut19.card-med .managercard18-picture{
+    left:55px;
+    top:27px
+  }
+  .ut19.card-med .managercard18-picture img{
+    height:74px;
+    width:74px
+  }
+  .ut19.card-med .pcdisplay-skills-left{
+    font-size:14px;
+    top:102px;
+    width:30px;
+    font-weight:100;
+    left:2px;
+    font-family:DINPro-Cond-Med,Arial,sans-serif !important;
+    display:none
+  }
+  .ut19.card-med .pcdisplay-skills-left>.skills-text{
+    font-size:12px;
+    font-weight:100;
+    width:35px;
+    text-align:center;
+    font-family:DINPro-Cond-Med,Arial,sans-serif !important
+  }
+  .ut19.card-med .pcdisplay-skills-left>.skills-title{
+    font-size:11px;
+    font-weight:100;
+    width:35px;
+    text-align:center;
+    position:relative;
+    top:10px;
+    font-family:DINPro-Cond-Med,Arial,sans-serif !important
+  }
+  .ut19.card-med .pcdisplay-wf-left{
+    font-size:12px;
+    top:125px;
+    width:35px;
+    left:2px;
+    text-align:center;
+    font-family:DINPro-Cond-Med,Arial,sans-serif !important;
+    display:none
+  }
+  .ut19.card-med .pcdisplay-wf-left>.wf-text{
+    font-size:12px;
+    width:35px;
+    text-align:center;
+    font-family:DINPro-Cond-Med,Arial,sans-serif !important;
+    font-weight:400
+  }
+  .ut19.card-med .pcdisplay-wf-left>.wf-title{
+    font-size:11px;
+    width:35px;
+    text-align:center;
+    position:relative;
+    top:10px;
+    font-family:DINPro-Cond-Med,Arial,sans-serif !important;
+    font-weight:400
+  }
+  .ut19.card-med .pcdisplay-wr-left{
+    font-size:14px;
+    top:150px;
+    width:35px;
+    text-align:center;
+    left:1px;
+    font-family:DINPro-Cond-Med,Arial,sans-serif !important;
+    font-weight:400;
+    display:none
+  }
+  .ut19.card-med .pcdisplay-wr-left>.wr-text{
+    font-size:12px;
+    width:35px;
+    font-family:DINPro-Cond-Med,Arial,sans-serif !important;
+    font-weight:400
+  }
+  .wrf-star-left{
+    font-size:10px;
+    position:relative;
+    top:0
+  }
+  #player-card-right-holder .pcdisplay-skills-left,#player-card-right-holder .pcdisplay-wf-left,#player-card-right-holder .pcdisplay-wr-left{
+    display:none
+  }
+  .ut19.card-med.pcdisplay.halloween>.pcdisplay-chemistry{
+    color:#d66f14 !important
+  }
+  .ut19.card-med.pcdisplay.halloween>.pcdisplay-chemistry-search>span{
+    color:#d66f14 !important
+  }
+  .ut19.card-med.pcdisplay.halloween>.pcdisplay-lines{
+    color:#d66f14 !important
+  }
+  .ut19.card-med.pcdisplay.halloween>.pcdisplay-price{
+    color:#d66f14 !important
+  }
+  .ut19.card-regular.pcdisplay.halloween>.ovrhover>.pcdisplay-chem-style-name>span{
+    color:#d66f14 !important
+  }
+  .pcdisplay.ut19.card-med.motm_eu .pcdisplay-chemistry{
+    color:#0849c3 !important
+  }
+  .pcdisplay.ut19.card-med.motm_eu .pcdisplay-chemistry-search>span{
+    color:#0849c3 !important
+  }
+  .pcdisplay.ut19.card-med.motm_eu .pcdisplay-lines{
+    color:#0849c3 !important
+  }
+  .ut19.card_regular.kit_card.gold{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/kits/cards/kit_gold_rare.png?v=2");
+    border:none
+  }
+  .ut19.card_regular.kit_card.goldnr{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/kits/cards/kit_gold_non_rare.png?v=2")
+  }
+  .ut19.card_regular.kit_card.silver{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/kits/cards/kit_silver_rare.png?v=2")
+  }
+  .ut19.card_regular.kit_card.silvernr{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/kits/cards/kit_silver_non_rare.png?v=2")
+  }
+  .ut19.card_regular.kit_card.bronze{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/kits/cards/kit_bronze_rare.png?v=2")
+  }
+  .ut19.card_regular.kit_card.bronzenr{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/kits/cards/kit_bronze_non_rare.png?v=2")
+  }
+  .ut19.card_regular.sta_card.gold{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/stadiums/cards/sta_gold_rare.png?v=2");
+    border:none
+  }
+  .ut19.card_regular.sta_card.goldnr{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/stadiums/cards/sta_gold_non_rare.png?v=2")
+  }
+  .ut19.card_regular.sta_card.silver{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/stadiums/cards/sta_silver_rare.png?v=2")
+  }
+  .ut19.card_regular.sta_card.silvernr{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/stadiums/cards/sta_silver_non_rare.png?v=2")
+  }
+  .ut19.card_regular.sta_card.bronze{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/stadiums/cards/sta_bronze_rare.png?v=2")
+  }
+  .ut19.card_regular.sta_card.bronzenr{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/stadiums/cards/sta_bronze_non_rare.png?v=2")
+  }
+  .ut19.card_regular.badge_card.gold{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/badges/cards/badge_gold_rare.png?v=2");
+    border:none
+  }
+  .ut19.card_regular.badge_card.goldnr{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/badges/cards/badge_gold_non_rare.png?v=2")
+  }
+  .ut19.card_regular.badge_card.silver{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/badges/cards/badge_silver_rare.png?v=2")
+  }
+  .ut19.card_regular.badge_card.silvernr{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/badges/cards/badge_silver_non_rare.png?v=2")
+  }
+  .ut19.card_regular.badge_card.bronze{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/badges/cards/badge_bronze_rare.png?v=2")
+  }
+  .ut19.card_regular.badge_card.bronzenr{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/badges/cards/badge_bronze_non_rare.png?v=2")
+  }
+  .ut19.card_regular.ball_card.gold{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/balls/cards/ball_gold_rare.png?v=2");
+    border:none
+  }
+  .ut19.card_regular.ball_card.goldnr{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/balls/cards/ball_gold_non_rare.png?v=2")
+  }
+  .ut19.card_regular.ball_card.silver{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/balls/cards/ball_silver_rare.png?v=2")
+  }
+  .ut19.card_regular.ball_card.silvernr{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/balls/cards/ball_silver_non_rare.png?v=2")
+  }
+  .ut19.card_regular.ball_card.bronze{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/balls/cards/ball_bronze_rare.png?v=2")
+  }
+  .ut19.card_regular.ball_card.bronzenr{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/club_items/balls/cards/ball_bronze_non_rare.png?v=2")
+  }
+  .ut19.kit_card.card_tiny{
+    cursor:pointer;
+    height:110px;
+    width:90px;
+    font-weight:bold
+  }
+  .ut19.kit_card.card_med{
+    cursor:pointer;
+    height:200px;
+    width:135px
+  }
+  .ut19.kit_card.card_regular{
+    height:190px;
+    width:130px;
+    background-size:130px 190px;
+    background-repeat:no-repeat
+  }
+  .ut19.card_regular .kit_card_img img{
+    top:-38px;
+    left:55px;
+    width:65px;
+    position:relative
+  }
+  .ut19.card_regular .kit_card_club img{
+    top:30px;
+    position:relative;
+    left:20px;
+    width:35px
+  }
+  .ut19.card_regular .kit_card_nation img{
+    top:30px;
+    left:25px;
+    width:25px;
+    position:relative
+  }
+  .ut19.card_regular .kit_card_name{
+    font-size:12px;
+    text-align:center;
+    top:-38px;
+    width:130px;
+    font-weight:bold;
+    line-height:10px;
+    position:relative
+  }
+  .ut19.card_regular .kit_card_type{
+    font-size:12px;
+    text-align:center;
+    top:-31px;
+    width:130px;
+    font-weight:normal;
+    line-height:10px;
+    position:relative
+  }
+  .ut19.card_regular .kit_card_year{
+    font-size:12px;
+    text-align:center;
+    top:-30px;
+    width:130px;
+    font-weight:normal;
+    line-height:10px;
+    position:relative
+  }
+  .managercard.ut19.card-med{
+    background-size:100% 100% !important
+  }
+  .managercard.ut19.card-med.gold{
+    color:#000;
+    background:no-repeat url("https://www.futbin.com/content/fifa19/img/cards/cons/managers/big/badge_gold_rare.png?v=10") 1px
+  }
+  .managercard.ut19.card-med.silver{
+    color:#000;
+    background:no-repeat url("https://www.futbin.com/content/fifa19/img/cards/cons/managers/big/badge_silver_rare.png?v=10") 1px
+  }
+  .managercard.ut19.card-med.bronze{
+    color:#000;
+    background:no-repeat url("https://www.futbin.com/content/fifa19/img/cards/cons/managers/big/badge_bronze_rare.png?v=10") 1px
+  }
+  .ut19.card-med .managercard-rat{
+    font-size:19px;
+    left:25px;
+    line-height:24px;
+    top:20px;
+    font-weight:bold
+  }
+  .ut19.card-med .managercard-name{
+    font-family:"DINPro-Cond-Med",Arial,sans-serif !important;
+    font-size:16px;
+    left:0;
+    line-height:16px;
+    text-align:center;
+    top:118px;
+    width:100%;
+    font-weight:100
+  }
+  .ut19.card-med .managercard-League{
+    font-size:13px;
+    left:0px;
+    line-height:16px;
+    text-align:center;
+    top:142px;
+    width:100%;
+    font-weight:bold
+  }
+  .ut19.card-med .managercard-contracts{
+    color:#000;
+    font-size:13px;
+    left:25px;
+    top:142px;
+    display:none
+  }
+  .ut19.card-med .managercard-country-name{
+    font-size:13px;
+    left:0px;
+    line-height:16px;
+    text-align:center;
+    top:167px;
+    width:100%;
+    font-weight:bold
+  }
+  .ut19.card-med .managercard-country img{
+    width:30px !important;
+    max-width:80%
+  }
+  .ut19.card-med .managercard-federation{
+    top:84px;
+    width:30px
+  }
+  .ut19.card-med .managercard-federation img{
+    max-width:80%
+  }
+  .ut19.card-med .managercard-talks{
+    left:22px;
+    top:80px
+  }
+  .ut19.card-med .managercard-picture{
+    left:47px;
+    top:21px
+  }
+  .ut19.card-med .managercard-picture img{
+    width:84px !important
+  }
+  .managercard19{
+    color:#fff;
+    font-family:"Open Sans",Arial,sans-serif;
+    position:relative
+  }
+  .managercard19 div{
+    line-height:18px;
+    position:absolute;
+    top:60px;
+    left:14px
+  }
+  .ut19.managercard19{
+    background-repeat:no-repeat;
+    color:#fff;
+    font-family:"Open Sans",Arial,sans-serif;
+    position:relative
+  }
+  .ut19.managercard19.card-tiny{
+    cursor:pointer;
+    height:110px;
+    width:90px;
+    font-weight:bold
+  }
+  .ut19.managercard19.card-med{
+    cursor:pointer;
+    height:200px;
+    width:135px
+  }
+  .ut19.card-med.managercard19{
+    background-size:cover !important
+  }
+  .ut19.card-med.managercard19.Gold{
+    color:#000;
+    background:no-repeat url("https://www.futbin.com/content/fifa19/img/cards/goldnrnif.png") 25% 1px
+  }
+  .ut19.card-med.managercard19.Gold.Rare{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/goldrnif.png")
+  }
+  .ut19.card-med.managercard19.Bronze{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/bronzenrnif.png")
+  }
+  .ut19.card-med.managercard19.Bronze.Rare{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/bronzernif.png")
+  }
+  .ut19.card-med.managercard19.Silver{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/silvernrnif.png")
+  }
+  .ut19.card-med.managercard19.Silver.Rare{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/cards/silverrnif.png")
+  }
+  #manager-card-added{
+    background-repeat:no-repeat;
+    background-size:90px 120px;
+    position:absolute;
+    height:120px;
+    width:90px;
+    cursor:default;
+    margin-left:2%
+  }
+  .ut19.managercard19-added.card-small{
+    cursor:pointer;
+    height:80px;
+    width:100px
+  }
+  .ut19.card-small .manager-added-picture img{
+    position:relative;
+    width:60px;
+    left:28px;
+    top:-24px
+  }
+  .ut19.card-small .manager-pic-added-country img{
+    position:relative;
+    top:25px;
+    width:30px;
+    left:10px
+  }
+  .ut19.card-small .manager-added-picture-league img{
+    position:relative;
+    width:35px;
+    top:26px;
+    left:6px
+  }
+  .ut19.card-small .manager-added-name{
+    position:relative;
+    top:-24px;
+    text-align:center;
+    font-size:12px;
+    font-weight:bold
+  }
+  .ut19.card-small.managercard19-added.Gold{
+    color:#000;
+    background:no-repeat url("https://www.futbin.com/content/fifa19/img/managers19/card/tiny-nonrare-gold.png") 25% 1px
+  }
+  .ut19.card-small.managercard19-added.Gold.Rare{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/managers19/card/tiny-rare-gold.png")
+  }
+  .ut19.card-small.managercard19-added.Bronze{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/managers19/card/tiny-nonrare-bronze.png")
+  }
+  .ut19.card-small.managercard19-added.Bronze.Rare{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/managers19/card/tiny-rare-bronze.png")
+  }
+  .ut19.card-small.managercard19-added.Silver{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/managers19/card/tiny-nonrare-silver.png")
+  }
+  .ut19.card-small.managercard19-added.Silver.Rare{
+    color:#000;
+    background-image:url("https://www.futbin.com/content/fifa19/img/managers19/card/tiny-rare-silver.png")
+  }
+  .ut19.card-med .managercard19-rat{
+    font-size:19px;
+    left:25px;
+    line-height:24px;
+    top:20px;
+    font-weight:bold
+  }
+  .ut19.card-med .managercard19-name{
+    font-size:13px;
+    left:0;
+    line-height:16px;
+    text-align:center;
+    top:114px;
+    width:100%;
+    font-weight:bold
+  }
+  .ut19.card-med .managercard19-League{
+    font-size:13px;
+    left:0px;
+    line-height:16px;
+    text-align:center;
+    top:122px;
+    width:100%;
+    font-weight:bold
+  }
+  .ut19.card-med .managercard19-contracts{
+    color:#000;
+    font-size:13px;
+    left:25px;
+    top:142px
+  }
+  .ut19.card-med .managercard19-country-name{
+    font-size:13px;
+    left:0px;
+    line-height:16px;
+    text-align:center;
+    top:167px;
+    width:100%;
+    font-weight:bold
+  }
+  .ut19.card-med .managercard19-talks{
+    left:22px;
+    top:80px
+  }
+  .ut19.card-med .managercard19-country img{
+    width:40px
+  }
+  .ut19.card-med .managercard19-picture{
+    left:55px;
+    top:36px
+  }
+  .ut19.card-med .managercard19-picture img{
+    width:74px
+  }
+  .pcdisplay.pink,.pcdisplay.purple,.pcdisplay.green{
+    background-color:transparent !important
+  }
+  /*# sourceMappingURL=mdb.css.map */
+  

@@ -1,5 +1,5 @@
 <button (click)="goBack()">Back</button>
-
+<!-- 
 <div *ngIf="player">
   <h2>{{player.name | uppercase}} Details</h2>
   <div><span>id: </span>{{player.id}}</div>
@@ -10,4 +10,6 @@
   </div>
 </div>
 
-<button (click)="save()">Save</button>
+<button (click)="save()">Save</button> -->
+
+<app-player-card [player]="player"></app-player-card>

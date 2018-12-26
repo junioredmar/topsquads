@@ -22,6 +22,7 @@ import { MessagesComponent } from './components/messages/messages.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { PlayerDetailComponent } from './components/player-detail/player-detail.component';
 import { PlayerSearchComponent } from './components/player-search/player-search.component';
+import { PlayerCardComponent } from './components/player-card/player-card.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PlayerSearchComponent } from './components/player-search/player-search.
     MessagesComponent,
     DashboardComponent,
     PlayerDetailComponent,
-    PlayerSearchComponent
+    PlayerSearchComponent,
+    PlayerCardComponent
   ],
   imports: [
     BrowserModule,

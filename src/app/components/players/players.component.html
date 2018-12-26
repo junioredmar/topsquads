@@ -1,18 +1,17 @@
 <h2>All Players</h2>
 <div>
+  <!--
   <label>Player name:
     <input #playerName />
   </label>
-  <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(playerName.value); playerName.value=''">
-    add
-  </button>
+  <button (click)="add(playerName.value); playerName.value=''">add</button> 
+  -->
 </div>
-<ul class="heroes">
+<ul class="players">
   <li *ngFor="let player of players">
     <a routerLink="/players/{{player.id}}">
       <span class="badge">{{player.id}}</span> {{player.name}}
     </a>
-    <button class="delete" title="delete player" (click)="delete(player)">x</button>
+    <!-- <button class="delete" title="delete player" (click)="delete(player)">x</button> -->
   </li>
 </ul>
