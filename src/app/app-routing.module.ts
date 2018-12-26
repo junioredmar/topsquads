@@ -6,8 +6,8 @@ import { PlayerDetailComponent } from './components/player-detail/player-detail.
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
-  { path: 'dashboard', redirectTo: '', pathMatch: 'full' },
   { path: 'topsquads', redirectTo: '', pathMatch: 'full' },
+  { path: 'dashboard', redirectTo: '', pathMatch: 'full' },
   { path: 'players', component: PlayersComponent },
   { path: 'players/:id', component: PlayerDetailComponent }
 ];
