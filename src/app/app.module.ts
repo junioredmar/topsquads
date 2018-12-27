@@ -21,6 +21,9 @@ import { InMemoryDataService } from './mocks/in-memory-data.service';
 // Routing
 import { AppRoutingModule } from './app-routing.module';
 
+// Pipes
+import { TruncatePipe } from './pipes/truncate.pipe';
+
 // Components
 import { PlayersComponent } from './components/players/players.component';
 import { MessagesComponent } from './components/messages/messages.component';
@@ -28,9 +31,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { PlayerDetailComponent } from './components/player-detail/player-detail.component';
 import { PlayerSearchComponent } from './components/player-search/player-search.component';
 import { PlayerCardComponent } from './components/player-card/player-card.component';
+import { SquadComponent } from './components/squad/squad.component';
 
-// Pipes
-import { TruncatePipe } from './pipes/truncate.pipe';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ import { TruncatePipe } from './pipes/truncate.pipe';
     PlayerDetailComponent,
     PlayerSearchComponent,
     PlayerCardComponent,
-    TruncatePipe
+    TruncatePipe,
+    SquadComponent
   ],
   imports: [
     BrowserModule,
